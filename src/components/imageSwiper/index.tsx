@@ -39,9 +39,9 @@ function ImageSwiper(props:ImageSwiperProps) {
       }}
     >
       {
-        images.map((image) => {
+        images.map((image, index) => {
           return (
-            <SwiperSlide>
+            <SwiperSlide key={index}>
               <Flex width='100%' height='400px' justifyContent='center'>
                 <Image src={image.src} alt={image.src}  
                   width='100%' height='100%' 

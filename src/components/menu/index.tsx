@@ -26,7 +26,7 @@ function Menu(props: StackProps) {
   const {...restProps} = props;
   const router = useRouter();
   const pathname = usePathname();
-  console.log('pathname', pathname)
+  console.log(pathname)
   return (
     <HStack  bg='blue.500' width='100%' justifyContent='center' height='60px'
       alignItems='center' spacing={10} {...restProps}>
@@ -38,6 +38,7 @@ function Menu(props: StackProps) {
           colorScheme='blue'
           outlineOffset="none!important"
           outline='0!important'
+          textDecoration={pathname === item.path && pathname !== '/' ? 'underline' : 'none'}
           p='0' key={item.name} onClick={() => {
             router.push(item.path)
           }}>{item.name}</Button>

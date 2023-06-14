@@ -16,14 +16,9 @@ const Layout = (props: LayoutProps)=> {
       minH='100%' {...restProps} spacing='0'
     >
       <Header />
-      <Box flex='1' maxW='1440px' 
-          width={{
-            lg: '768px',
-            xl: '1280px'
-          }}
-          margin='0 auto' p='20px 100px'>
-          {children}
-        </Box>
+      <Box width='100%' margin='0 auto'>
+        {children}
+      </Box>
       <Footer />
     </VStack>
   );
