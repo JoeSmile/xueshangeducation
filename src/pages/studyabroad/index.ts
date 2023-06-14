@@ -1,0 +1,1 @@
+export { Studyabroad as default} from '../../views/studyabroad'

@@ -1,0 +1,1 @@
+export { Aboutus as default} from '../../views/aboutus'

@@ -1,0 +1,1 @@
+export { Sqa as default} from '../../views/sqa'
