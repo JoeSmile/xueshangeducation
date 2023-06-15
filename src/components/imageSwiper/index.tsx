@@ -28,11 +28,12 @@ function ImageSwiper(props:ImageSwiperProps) {
       pagination={{ clickable: true }}
       scrollbar={{ draggable: true }}
       autoplay={{
-        delay: 8000,
+        delay: 3000,
         stopOnLastSlide: false,
       }}
       style={{
         width: '100%',
+        maxWidth:'1440px',
         height: '400px',
         border: '1px solid',
         textAlign:'center'
@@ -42,7 +43,7 @@ function ImageSwiper(props:ImageSwiperProps) {
         images.map((image, index) => {
           return (
             <SwiperSlide key={index}>
-              <Flex width='100%' height='400px' justifyContent='center'>
+              <Flex width='100%' height='500px' justifyContent='center'>
                 <Image src={image.src} alt={image.src}  
                   width='100%' height='100%' 
                   objectFit='cover'/>

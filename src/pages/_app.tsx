@@ -9,12 +9,11 @@ const theme = extendTheme({
     global: {
       'html, body': {
         color: 'blackAlpha.700',
-        backgroundColor: '#f8f8f8'
+        bg: 'white'
       }
     }
   },
   colors: {
-    bgGray: '#f8f8f8',
     white: "#ffffff"
   }
 })

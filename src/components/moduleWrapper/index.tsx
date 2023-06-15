@@ -8,9 +8,9 @@ export type ModuleWrapperProps = {
 
 function ModuleWrapper({title, children, ...props}: ModuleWrapperProps) {
   return (
-    <Box width='100%' border='1px solid' p='20px'>
-      <Box {...props}>
-        <Text fontSize='24px' fontWeight='600'
+    <Box width='100%' my='20px'>
+      <Box p='20px' maxW='1440px' bg='#f8f8f8' {...props} >
+        <Text fontSize='36px' fontWeight='600' color='gray.600'
           width='100%' textAlign='center' mb='30px'
           >{title}
         </Text>

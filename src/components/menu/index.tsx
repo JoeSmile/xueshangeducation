@@ -8,7 +8,7 @@ const menuList = [{
   name: '中外合作办学',
   path: '/cooperation'
 },{
-  name: '留学',
+  name: '学尚留学',
   path: '/studyabroad'
 },{
   name: '国际本科',
