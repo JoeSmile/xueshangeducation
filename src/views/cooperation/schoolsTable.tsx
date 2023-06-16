@@ -15,11 +15,30 @@ import {
 
 import { School, SchoolType } from './types';
 import React from 'react';
+import { isArray } from 'util';
 
 type ColumnType = {
   display: string,
   key: string,
   render?: (parameter?: any)=> JSX.Element | React.ReactNode
+}
+const displayMap = {
+  [SchoolType.FULL_TIME]: '全日制',
+  [SchoolType.PART_TIME]: '非全日制',
+  [SchoolType.ON_THE_JOB]: '在职'
+}
+
+const SchoolTypeDisplay = ({currentType}: {currentType:SchoolType | SchoolType[]}) => {
+const types = Array.isArray(currentType) ? [...currentType] :[currentType];
+return <Text>{
+  types.map((type, index) => {
+    if (types.length > 1 && index !== 0) {
+      return `/${displayMap[type]}`
+    } else {
+      return displayMap[type]
+    }
+  })
+  }</Text>
 }
 
 const columns: ColumnType[] =  [{
@@ -34,7 +53,7 @@ const columns: ColumnType[] =  [{
 }, {
   display: '学制',
   key: 'type',
-  render: (type: SchoolType) => <Text>{type === SchoolType.FULL_TIME ? "全日制": "非全日制"}</Text>
+  render: (type: SchoolType | SchoolType[]) => <><SchoolTypeDisplay currentType={type}/></>
 }, {
   display: '学年',
   key: 'lengthOfSchooling'
@@ -82,8 +101,6 @@ export const SchoolsTable = ({schoolData}: SchoolsTableProps) => {
                       </Td>
                     )
                   })
-
-
                   }
               </Tr>
             })

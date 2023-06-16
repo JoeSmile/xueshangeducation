@@ -24,7 +24,7 @@ export const Cooperation = ()=> {
   }, [schoolTypes]);
 
   const schoolData = useMemo(()=> {
-    const tempSchools = schoolList.filter(school => schoolTypes.length ? schoolTypes.includes(school.type) : true)
+    const tempSchools = schoolList.filter(school => schoolTypes.length ? schoolTypes.filter(type => Array.isArray(school.type) ? school.type.includes(type) : school.type === type) : true)
     if (inputVal) {
       const options = {
         includeScore: true,
@@ -53,6 +53,9 @@ export const Cooperation = ()=> {
             <Button fontSize='13px' onClick={() => selectType(SchoolType.PART_TIME)}
             colorScheme={schoolTypes.includes(SchoolType.PART_TIME) ? 'blue' : 'gray'}
             >非全日制</Button>
+            <Button fontSize='13px' onClick={() => selectType(SchoolType.ON_THE_JOB)}
+            colorScheme={schoolTypes.includes(SchoolType.ON_THE_JOB) ? 'blue' : 'gray'}
+            >在职</Button>
             <Input variant='outline'  width='200px' placeholder='请输入要查询的字段'
               onChange={(event)=> setInputVal(event.target.value)}
             />
