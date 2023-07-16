@@ -2,10 +2,12 @@ import ImageSwiper from '@/components/imageSwiper';
 import Layout from '@/components/layout';
 import ModuleWrapper from '@/components/moduleWrapper';
 import React from 'react';
-import ProjectsList from './ProjectsList';
-import Services from './Services';
-import Advanced from './Advanced';
-import SchoolLogos from './SchoolLogos';
+import Countries from './Countries';
+import Process from './Process';
+import Profession from './Profession';
+import OfferExample from './OfferExample';
+import Rank from './Rank';
+import Consult from './Consult'
 
 const images = [{
   src: '/homepage/swiper/1.jpg'
@@ -22,21 +24,28 @@ export const Homepage = ()=> {
     <Layout>
       <ImageSwiper images={images}/>
 
-      <ModuleWrapper title='精选产品' bg='white'>
-       <ProjectsList />
+      <ModuleWrapper bg='white'>
+       <Countries />
       </ModuleWrapper>
 
-      <ModuleWrapper title='七大服务体系'>
-       <Services />
+      <ModuleWrapper bg='#F5F5F5'>
+       <Process />
       </ModuleWrapper>
 
-      <ModuleWrapper title='行业优势' bg='white'>
-       <Advanced />
+      <ModuleWrapper bg='white'>
+        <Profession />
       </ModuleWrapper>
 
+      <ModuleWrapper bg='#F5F5F5'>
+        <OfferExample/>
+      </ModuleWrapper>
 
-      <ModuleWrapper title='合作院校'>
-       <SchoolLogos/>
+      <ModuleWrapper bg='white'>
+        <Rank />
+      </ModuleWrapper>
+
+      <ModuleWrapper bg='#F5F5F5'>
+        <Consult />
       </ModuleWrapper>
     </Layout>
   );

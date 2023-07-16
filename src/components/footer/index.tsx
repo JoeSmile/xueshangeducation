@@ -4,7 +4,7 @@ const QRcodes = ['qrcode.jpg', 'little-program.jpg']
 
 const QRCodeCard = () => {
   return  <Card boxShadow='none'>
-  <CardBody bg='blue.500'>
+  <CardBody bg='#0D0E67'>
     <VStack>
       <Image src='/qrcode.jpg' alt='qrcode' height='80px' width='80px'/>
       <Text color='gray.50'>公众号: 学man君</Text>
@@ -32,7 +32,7 @@ const Addresses = () =>{
 
 function Footer(props: StackProps) {
   return (
-   <VStack padding='20px' width='100%' bg='blue.500' color='gray.50' {...props}> 
+   <VStack padding='20px' width='100%' bg='#0D0E67' color='gray.50' {...props}> 
     <HStack spacing='50px'>
       <Addresses />
       <QRCodeCard />

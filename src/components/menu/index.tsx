@@ -4,15 +4,30 @@ import { useRouter, usePathname } from 'next/navigation'
 const menuList = [{
   name: '首页',
   path: '/'
-},{
-  name: '中外合作办学',
-  path: '/cooperation'
-},{
-  name: '学尚留学',
+}, {
+  name: '英国',
   path: '/studyabroad'
-},{
-  name: '国际本科',
+}, {
+  name: '美国',
   path: '/sqa'
+}, {
+  name: '澳大利亚',
+  path: '/studyabroad'
+}, {
+  name: '加拿大',
+  path: '/sqa'
+}, {
+  name: '新西兰',
+  path: '/studyabroad'
+}, {
+  name: '新加坡',
+  path: '/sqa'
+}, {
+  name: '港澳',
+  path: '/sqa'
+}, {
+  name: '中外合办',
+  path: '/cooperation'
 }, {
   name: '关于我们',
   path: '/aboutus'
@@ -28,7 +43,7 @@ function Menu(props: StackProps) {
   const pathname = usePathname();
   console.log(pathname)
   return (
-    <HStack  bg='blue.500' width='100%' justifyContent='center' height='60px'
+    <HStack  bg='#122CBE' width='100%' justifyContent='center' height='60px'
       alignItems='center' spacing={10} {...restProps}>
       {
         menuList.map((item, index) => {
