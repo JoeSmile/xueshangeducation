@@ -1,1 +1,1 @@
-export { Studyabroad as default} from '../../views/studyabroad'
+export { Studyabroad as default } from '../../views/studyabroad'

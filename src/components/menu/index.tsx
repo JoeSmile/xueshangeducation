@@ -1,36 +1,34 @@
-import { Flex, Text, Box, VStack, FlexProps, Button, HStack, StackProps, border} from '@chakra-ui/react';
-import { useRouter, usePathname } from 'next/navigation'
+import { FlexProps, Button, HStack, StackProps } from '@chakra-ui/react';
+import { usePathname } from 'next/navigation';
+import { useRouter } from 'next/router';
 
 const menuList = [{
-  name: '首页',
-  path: '/'
-}, {
   name: '英国',
-  path: '/studyabroad'
+  path: 'england'
 }, {
   name: '美国',
-  path: '/sqa'
+  path: 'american'
 }, {
   name: '澳大利亚',
-  path: '/studyabroad'
+  path: 'australia'
 }, {
   name: '加拿大',
-  path: '/sqa'
+  path: 'canada'
 }, {
   name: '新西兰',
-  path: '/studyabroad'
+  path: 'newzeland'
 }, {
   name: '新加坡',
-  path: '/sqa'
+  path: 'singapore'
 }, {
   name: '港澳',
-  path: '/sqa'
+  path: 'hkmacao'
 }, {
   name: '中外合办',
-  path: '/cooperation'
+  path: 'cooperation'
 }, {
   name: '关于我们',
-  path: '/aboutus'
+  path: 'aboutus'
 }];
 
 type MenuProps = {
@@ -45,18 +43,40 @@ function Menu(props: StackProps) {
   return (
     <HStack  bg='#122CBE' width='100%' justifyContent='center' height='60px'
       alignItems='center' spacing={10} {...restProps}>
+      <Button
+        border='none'
+        variant='link'
+        color='white'
+        colorScheme='blue'
+        outlineOffset="none!important"
+        outline='0!important'
+        p='0'
+        onClick={() => router.push('/')}
+      >
+        首页
+      </Button>
       {
-        menuList.map((item, index) => {
-          return <Button border='none'
-          variant='link'
-          color='white'
-          colorScheme='blue'
-          outlineOffset="none!important"
-          outline='0!important'
-          textDecoration={pathname === item.path && pathname !== '/' ? 'underline' : 'none'}
-          p='0' key={item.name} onClick={() => {
-            router.push(item.path)
-          }}>{item.name}</Button>
+        menuList.map(item => {
+          return (
+            <Button border='none'
+              variant='link'
+              color='white'
+              colorScheme='blue'
+              outlineOffset="none!important"
+              outline='0!important'
+              textDecoration={pathname === item.path && pathname !== '/' ? 'underline' : 'none'}
+              p='0'
+              key={item.name}
+              onClick={() => router.push({
+                pathname: '/studyabroad/[country]',
+                query: {
+                  country: item.path
+                }
+              })}
+            >
+              {item.name}
+            </Button>
+          )
         })
       }
     </HStack>

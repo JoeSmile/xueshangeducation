@@ -1,1 +1,0 @@
-export {Country as default} from '../../../views/country'

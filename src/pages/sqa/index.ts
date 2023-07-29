@@ -1,1 +1,1 @@
-export { Sqa as default} from '../../views/sqa'
+export { Sqa as default } from '../../views/sqa'
