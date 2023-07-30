@@ -8,6 +8,7 @@ import Applyfor from './components/Applyfor';
 import Process from '../homepage/Process';
 import OfferExample from '../homepage/OfferExample';
 import ApplyProblems from './components/ApplyProblems';
+import PopularSchool from './components/PopularSchool'
 
 const American = ()=> {
   return (
@@ -34,6 +35,10 @@ const American = ()=> {
 
       <ModuleWrapper bg='#F5F5F5'>
         <ApplyProblems />
+      </ModuleWrapper>
+
+      <ModuleWrapper bg='#F5F5F5'>
+        <PopularSchool />
       </ModuleWrapper>
     </Layout>
   );

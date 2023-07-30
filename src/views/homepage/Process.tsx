@@ -14,7 +14,7 @@ import {
 } from '@chakra-ui/react'
 
 const ProcessItem = [{
-  icon: '/logo.png',
+  icon: '/homepage/process/fuIcon_1.jpg',
   title: '前期咨询',
   description: [
     '了解留学需求',
@@ -22,7 +22,7 @@ const ProcessItem = [{
     '介绍服务理念',
   ],
 }, {
-  icon: '/logo.png',
+  icon: '/contry_problem/1.jpg',
   title: '留学方案',
   description: [
     '评估申请难度',
@@ -30,7 +30,7 @@ const ProcessItem = [{
     '全程申请跟进',
   ],
 }, {
-  icon: '/logo.png',
+  icon: '/contry_problem/2.png',
   title: '选院校专业',
   description: [
     '了解学员意愿',
@@ -38,7 +38,7 @@ const ProcessItem = [{
     '评估录取概率',
   ],
 }, {
-  icon: '/logo.png',
+  icon: '/contry_problem/3.jpg',
   title: '材料指导',
   description: [
     '指导材料准备',
@@ -46,7 +46,7 @@ const ProcessItem = [{
     '协助材料邮寄',
   ],
 }, {
-  icon: '/logo.png',
+  icon: '/contry_problem/4.jpg',
   title: '签证办理',
   description: [
     '指导签证材料',
@@ -54,7 +54,7 @@ const ProcessItem = [{
     '指导签证申请',
   ],
 }, {
-  icon: '/logo.png',
+  icon: '/contry_problem/5.png',
   title: '后续服务',
   description: [
     '留学行前指导',
@@ -62,7 +62,7 @@ const ProcessItem = [{
     '联络接机服务',
   ],
 }, {
-  icon: '/logo.png',
+  icon: '/contry_problem/6.jpg',
   title: '成功留学',
   description: [
     '顺利完成跨境',
@@ -82,7 +82,7 @@ function Process() {
               <WrapItem key={item.title}>
                 <HStack>
                   <VStack borderRadius='150px' alignItems='center' bg='#fff' paddingX='20px' paddingY='50px'>
-                    <Image src="/logo.png" objectFit='cover' height='36px' alt='icon'/>
+                    <Image src={item.icon} objectFit='cover' height='56px' alt='icon'/>
                     <Text fontSize='24px' fontWeight='600' color='#00B287'>{item.title}</Text>
                     <Divider />
                     <VStack>
@@ -91,7 +91,7 @@ function Process() {
                       ))}
                     </VStack>
                   </VStack>
-                  {processIndex !== ProcessItem.length - 1 && <Image src="/logo.png" objectFit='cover' height='30px' alt='icon'/>}
+                  {processIndex !== ProcessItem.length - 1 && <Image src="/homepage/process/fuLine.png" objectFit='cover' height='30px' alt='icon'/>}
                 </HStack>
               </WrapItem>
               )

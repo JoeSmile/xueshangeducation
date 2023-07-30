@@ -22,7 +22,7 @@ const menuList = [{
   path: 'singapore'
 }, {
   name: '港澳',
-  path: 'hkmacao'
+  path: 'hongkong'
 }, {
   name: '中外合办',
   path: 'cooperation'
