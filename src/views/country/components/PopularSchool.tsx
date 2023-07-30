@@ -59,7 +59,7 @@ const offerList = [{
 
 function PopularSchool() {
   return (
-    <VStack>
+    <VStack paddingBottom='30px'>
       <Box color='#0D0E67' fontSize='20px' fontWeight='600' marginY='20px'>选校不迷茫 热门院校推荐</Box>
       <Flex width='100%' justifyContent='center'>
         <Wrap spacing='30px' width='1200px'>

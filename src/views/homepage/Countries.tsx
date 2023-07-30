@@ -37,7 +37,7 @@ const products = [{
 
 function Countries() {
   return (
-    <VStack>
+    <VStack paddingBottom='30px'>
       <Center>
         <Text color='#0D0E67' fontSize='48px' fontWeight='600'>留学大咖的进阶之路</Text>
       </Center>

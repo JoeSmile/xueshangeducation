@@ -29,7 +29,7 @@ function Profession() {
     setTopSchoolData(top200Schools.slice(index * 50, (index + 1) * 50))
   }
   return (
-    <VStack>
+    <VStack paddingBottom='30px'>
       <Box color='#0D0E67' fontSize='48px' fontWeight='600'>排名篇</Box>
       <Box color='#0D0E67' fontSize='20px' fontWeight='600'>选校定位有门道</Box>
       <Box color='#FF8A00' fontSize='20px' fontWeight='600'>一 2023QS世界大学排名TOP200 一</Box>

@@ -47,7 +47,7 @@ const ProcessItem = [{
 
 function ApplyProblems() {
   return (
-    <VStack>
+    <VStack paddingBottom='30px'>
       <Box color='#0D0E67' fontSize='20px' fontWeight='600' marginY='20px'>美国留学各阶段申请难点 逐一攻克</Box>
       <Flex width='100%' justifyContent='center' marginBottom={4}>
         <Wrap align='center' justify='center' width='100%'>

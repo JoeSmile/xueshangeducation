@@ -37,7 +37,7 @@ const commonProblem = [
 
 function Profession() {
   return (
-    <VStack>
+    <VStack paddingBottom='30px'>
       <Center marginY='10px'>
         <Text color='#0D0E67' fontSize='48px' fontWeight='600'>专业篇</Text>
       </Center>

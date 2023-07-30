@@ -70,6 +70,7 @@ function Overview() {
     <Box
       height='500px'
       position='relative'
+      paddingBottom='30px'
     >
       <Box
         zIndex='11'

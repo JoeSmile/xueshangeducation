@@ -73,7 +73,7 @@ const ProcessItem = [{
 
 function Process() {
   return (
-    <VStack>
+    <VStack paddingBottom='30px'>
       <Box color='#0D0E67' fontSize='20px' fontWeight='600' marginY='20px'>在学尚，体验一站式留学服务</Box>
       <Flex width='100%' justifyContent='center' marginBottom={4}>
         <Wrap align='center' justify='center' width='100%'>

@@ -12,7 +12,7 @@ import React from 'react';
 
 function Consult() {
   return (
-    <VStack>
+    <VStack paddingBottom='30px'>
       <Box color='#0D0E67' fontSize='20px' fontWeight='600' marginY='20px'>专业留学顾问限时1V1咨询</Box>
       <HStack>
         <InputGroup>

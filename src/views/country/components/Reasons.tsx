@@ -45,7 +45,7 @@ const ProcessItem = [{
 
 function Reasons() {
   return (
-    <VStack>
+    <VStack paddingBottom='30px'>
       <Box color='#0D0E67' fontSize='20px' fontWeight='600' marginY='20px'>为什么赴美留学的人的人数逐年增长</Box>
       <Flex width='100%' justifyContent='center' marginBottom={4}>
         <Wrap align='center' justify='center' width='100%'>

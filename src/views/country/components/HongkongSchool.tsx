@@ -67,7 +67,7 @@ function HongkongSchool() {
     setCurrent(data)
   }
   return (
-    <VStack>
+    <VStack paddingBottom='30px'>
       <Box color='#0D0E67' fontSize='20px' fontWeight='600' marginY='20px'>选校推荐</Box>
       <Flex width='100%' justifyContent='center' cursor='pointer'>
         <Box display='flex' justifyContent='space-around'>

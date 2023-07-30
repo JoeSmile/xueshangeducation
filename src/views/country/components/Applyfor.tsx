@@ -50,7 +50,7 @@ const ProcessItem = [{
 
 function Applyfor() {
   return (
-    <VStack>
+    <VStack paddingBottom='30px'>
       <Box color='#0D0E67' fontSize='20px' fontWeight='600' marginY='20px'>美国留学个阶段申请条件</Box>
       <Flex width='100%' justifyContent='center' marginBottom={4}>
         <Wrap align='center' justify='center' width='100%'>
