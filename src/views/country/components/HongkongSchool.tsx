@@ -94,7 +94,7 @@ function HongkongSchool() {
           }
         </Box>
       </Flex>
-      <Box marginTop='16px' borderRadius='20px' padding='0 30px 45px 30px' bg='linear-gradient(180deg,#f5f5f5 0%,#f5f5f5 40%,#f2c7ef)'>
+      <Box marginTop='16px' borderRadius='20px' padding='0 30px 45px 30px' bg='linear-gradient(180deg,#f5f5f5 0%,#f5f5f5 40%,#f2c7ef)'  maxWidth='1440px'>
         <VStack alignItems='unset'>
           <Text fontSize='24px' color='#666666' marginBottom='10px'>{`${name} ${englishName}`}</Text>
           <HStack display='flex' alignItems='unset'>

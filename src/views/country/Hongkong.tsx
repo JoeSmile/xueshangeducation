@@ -1,5 +1,5 @@
 import Layout from '@/components/layout';
-import { Flex } from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react';
 import React from 'react';
 import ModuleWrapper from '@/components/moduleWrapper';
 import CountryTitle from './components/CountryTitle';
@@ -12,7 +12,7 @@ import HongkongSchool from './components/HongkongSchool'
 
 const American = ()=> {
   return (
-    <Layout>
+    <Box>
       <ModuleWrapper bg='white'>
         <CountryTitle />
       </ModuleWrapper>
@@ -37,10 +37,10 @@ const American = ()=> {
         <ApplyProblems />
       </ModuleWrapper>
 
-      <ModuleWrapper bg='#F5F5F5'>
-        <HongkongSchool />
+      <ModuleWrapper bg='#F5F5F5' paddingX='40px'>
+        <HongkongSchool  maxWidth='1440px'/>
       </ModuleWrapper>
-    </Layout>
+    </Box>
   );
 }
 

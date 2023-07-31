@@ -52,8 +52,8 @@ function OfferExample() {
       <Flex width='100%' justifyContent='center'>
         <Wrap spacing='30px' width='1000px'>
           {
-            offerList.map(item => 
-              <WrapItem key={item.name} width='30%' alignItems='unset'>
+            offerList.map((item,index) => 
+              <WrapItem key={index} width='30%' alignItems='unset'>
                 <Card>
                   <VStack bg='#fff' padding='20px'>
                     <HStack>

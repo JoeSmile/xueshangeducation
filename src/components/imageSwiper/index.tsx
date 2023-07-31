@@ -33,7 +33,6 @@ function ImageSwiper(props:ImageSwiperProps) {
       }}
       style={{
         width: '100%',
-        maxWidth:'1440px',
         height: '400px',
         border: '1px solid',
         textAlign:'center'

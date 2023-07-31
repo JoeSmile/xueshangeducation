@@ -3,7 +3,7 @@ import React from 'react';
 
 function LogoArea() {
   return (
-    <HStack justifyContent='space-between' width='100%' maxW='1440px' px='120px'>
+    <HStack justifyContent='space-between' width='100%' px='120px'>
       <HStack >
         <Image src="/logo.png" objectFit='cover' height='120px' alt='logo'/>
         <Text fontSize='24px' color='#0029BF'>
