@@ -65,6 +65,7 @@ function Applyfor() {
                 
               >
                 <Box
+                  width='100%'
                   display='flex'
                   flexDirection='column'
                   alignItems='unset'
