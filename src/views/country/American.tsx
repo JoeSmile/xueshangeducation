@@ -1,5 +1,5 @@
 import Layout from '@/components/layout';
-import { Flex } from '@chakra-ui/react';
+import { Flex, Box } from '@chakra-ui/react';
 import React from 'react';
 import ModuleWrapper from '@/components/moduleWrapper';
 import CountryTitle from './components/CountryTitle';
@@ -12,7 +12,7 @@ import PopularSchool from './components/PopularSchool'
 
 const American = ()=> {
   return (
-    <Layout>
+    <Box>
       <ModuleWrapper bg='white'>
         <CountryTitle />
       </ModuleWrapper>
@@ -40,7 +40,7 @@ const American = ()=> {
       <ModuleWrapper bg='#F5F5F5'>
         <PopularSchool />
       </ModuleWrapper>
-    </Layout>
+    </Box>
   );
 }
 
