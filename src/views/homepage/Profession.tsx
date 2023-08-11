@@ -3,28 +3,28 @@ import React from 'react';
 
 const subjectList = [{
   subject:'会计与金融学',
-  imageUrl: '/logo.png'
+  imageUrl: '/homepage/subject/1.jpg'
 }, {
   subject:'市场营销',
-  imageUrl: '/logo.png'
+  imageUrl: '/homepage/subject/2.jpg'
 }, {
   subject:'传媒',
-  imageUrl: '/logo.png'
+  imageUrl: '/homepage/subject/3.jpg'
 }, {
   subject:'计算机专业',
-  imageUrl: '/logo.png'
+  imageUrl: '/homepage/subject/4.jpg'
 }, {
   subject:'教育学',
-  imageUrl: '/logo.png'
+  imageUrl: '/homepage/subject/5.jpg'
 }, {
   subject:'管理学',
-  imageUrl: '/logo.png'
+  imageUrl: '/homepage/subject/6.jpg'
 }, {
   subject:'电气工程',
-  imageUrl: '/logo.png'
+  imageUrl: '/homepage/subject/7.jpg'
 }, {
   subject:'艺术专业',
-  imageUrl: '/logo.png'
+  imageUrl: '/homepage/subject/8.jpg'
 }]
 
 const commonProblem = [
@@ -55,11 +55,12 @@ function Profession() {
                   height='100px'
                   width='22%'
                   backgroundPosition='center'
-                  backgroundSize='contain'
+                  backgroundSize='cover'
+                  backgroundRepeat='no-repeat'
                   alignItems='center'
                   justifyContent='center'
                 >
-                  <Text color='red'>{item.subject}</Text>
+                  <Text color='red' fontWeight='600'>{item.subject}</Text>
                 </WrapItem>
               )
             }
