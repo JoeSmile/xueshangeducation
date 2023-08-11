@@ -2,27 +2,27 @@ import { FlexProps, Button, HStack, StackProps } from '@chakra-ui/react';
 import { usePathname } from 'next/navigation';
 import { useRouter } from 'next/router';
 
-const menuList = [{
+export const menuList = [{
   name: '英国',
-  path: 'england'
+  path: 'UK'
 }, {
   name: '美国',
-  path: 'american'
+  path: 'USA'
 }, {
   name: '澳大利亚',
-  path: 'australia'
+  path: 'Australia'
 }, {
   name: '加拿大',
-  path: 'canada'
+  path: 'Canada'
 }, {
   name: '新西兰',
-  path: 'newzeland'
-}, {
+  path: 'NewZealand'
+},{
   name: '新加坡',
-  path: 'singapore'
+  path: 'Singapore'
 }, {
   name: '港澳',
-  path: 'hongkong'
+  path: 'HonKong'
 }, {
   name: '中外合办',
   path: 'cooperation'
@@ -56,7 +56,7 @@ function Menu(props: StackProps) {
         首页
       </Button>
       {
-        menuList.map(item => {
+        menuList.map((item, index) => {
           return (
             <Button border='none'
               variant='link'
@@ -67,12 +67,25 @@ function Menu(props: StackProps) {
               textDecoration={pathname === item.path && pathname !== '/' ? 'underline' : 'none'}
               p='0'
               key={item.name}
-              onClick={() => router.push({
-                pathname: '/studyabroad/[country]',
-                query: {
-                  country: item.path
+              onClick={() => {
+                let route = {};
+                if (index<=6) {
+                  route = {
+                    pathname: `/studyabroad/${item.path}`,
+                    query: {
+                      country: item.path
+                    }
+                  }
+                } else {
+                  route = {
+                    pathname:  `/${item.path}`,
+                   
+                  }
                 }
-              })}
+
+                router.push(route)
+
+              }}
             >
               {item.name}
             </Button>

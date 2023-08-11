@@ -33,9 +33,9 @@ function ImageSwiper(props:ImageSwiperProps) {
       }}
       style={{
         width: '100%',
-        height: '400px',
-        border: '1px solid',
-        textAlign:'center'
+        height: '500px',
+        textAlign:'center',
+        maxWidth:'1200px'
       }}
     >
       {

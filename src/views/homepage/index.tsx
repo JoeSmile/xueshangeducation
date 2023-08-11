@@ -13,10 +13,6 @@ const images = [{
   src: '/homepage/swiper/1.jpg'
 }, {
   src: '/homepage/swiper/2.jpg'
-},{
-  src: '/homepage/swiper/3.jpg'
-},{
-  src: '/homepage/swiper/4.jpg'
 }]
 
 export const Homepage = ()=> {

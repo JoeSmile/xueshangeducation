@@ -4,34 +4,36 @@ import NextLink from 'next/link'
 
 const products = [{
   title: '美国',
-  path: '/cooperation',
-  imageUrl: '/logo.png',
+  imageUrl: '/homepage/country/1.jpg',
   description: '美国留学要花多少钱？'
 },{
-  title: '澳洲/新西兰',
-  path: '/studyabroad',
-  imageUrl: '/logo.png',
-  description: '澳洲/新西兰热门专业有哪些？'
+  title: '澳洲',
+  imageUrl: '/homepage/country/2.jpg',
+  description: '澳洲热门专业有哪些？'
 },{
   title: '加拿大',
-  path: '/sqa',
-  imageUrl: '/logo.png',
+  imageUrl: '/homepage/country/3.jpg',
   description: '加拿大签证真的很难办吗？'
 }, {
   title: '欧洲',
-  path: '/cooperation',
-  imageUrl: '/logo.png',
+  imageUrl: '/homepage/country/4.jpg',
   description: '欧洲国家可以免学费吗？'
 },{
   title: '英国',
-  path: '/studyabroad',
-  imageUrl: '/logo.png',
+  imageUrl: '/homepage/country/5.jpg',
   description: '英国院校排名知多少？'
 },{
   title: '亚洲',
-  path: '/sqa',
-  imageUrl: '/logo.png',
+  imageUrl: '/homepage/country/6.jpg',
   description: '香港八大成人大陆高考成绩吗？'
+},{
+  title: '港澳',
+  imageUrl: '/homepage/country/7.jpg',
+  description: '香港八大承认大陆高考成绩吗?'
+},{
+  title: '中外合办',
+  imageUrl: '/homepage/country/8.jpg',
+  description: '中外合办值得上吗？'
 }]
 
 
@@ -45,27 +47,41 @@ function Countries() {
         <Text color='#0D0E67' fontSize='48px' fontWeight='600'>国家篇</Text>
       </Center>
       <Flex justifyContent='center'>
-        <Wrap maxW='1200px' width='100%' spacing={10}>
+        <Wrap maxW='1200px' width='100%' spacing={10} justifyContent='center'>
           {
             products.map(product => {
               return (
-                <WrapItem width='30%' key={product.title}>
+                <WrapItem key={product.title} justifyContent='center'>
                   <Card
-                    height={160}
-                    width='100%'
+                    _after={{
+                      content: "''",
+                      height: '100%',
+                      width: '100%',
+                      position: 'absolute',
+                      top: 0,
+                      left: 0,
+                      zIndex: 1,
+                      background: 'inherit',
+                      filter: 'blur(2px)'
+                    }}
+                    position='relative'
+                    boxSizing='border-box'
+                    backgroundRepeat='no-repeat'
                     backgroundImage={product.imageUrl}
                     backgroundPosition='center'
-                    backgroundSize='contain'
+                    backgroundSize='cover'
+                    height={160}
+                    width='270px'
                     alignItems='center'
                     justifyContent='center'
                     color='red'
-                  >
-                    <CardBody gap={20}>
+                    >
+                    <CardBody gap={20} position='absolute' zIndex='10' height={160}>
                       <Center marginY='10px'>
                         <Heading fontSize="42px">{product.title}</Heading>
                       </Center>
                       <Center>
-                        <Text>{product.description}</Text>
+                        <Text fontWeight='bold' fontSize='16px'>{product.description}</Text>
                       </Center>
                     </CardBody>
                   </Card>

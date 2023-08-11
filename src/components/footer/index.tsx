@@ -37,7 +37,7 @@ function Footer(props: StackProps) {
       <Addresses />
       <QRCodeCard />
     </HStack>
-    <Text>copyright 学尚教育</Text>
+    <Text>Copyright © 2023 北京学尚太奇信息科技有限公司 | 京ICP备2022008077号</Text>
    </VStack>
   );
 }

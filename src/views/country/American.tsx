@@ -13,10 +13,6 @@ import PopularSchool from './components/PopularSchool'
 const American = ()=> {
   return (
     <Box>
-      <ModuleWrapper bg='white'>
-        <CountryTitle />
-      </ModuleWrapper>
-
       <ModuleWrapper bg='#F5F5F5'>
         <Reasons />
       </ModuleWrapper>

@@ -6,65 +6,28 @@ import {
   Text,
   Button,
 } from '@chakra-ui/react';
-import React, { useState } from 'react';
-
-
-const countryData = [{
-  name: '美国',
-  flag: '/country/USA (1).png',
-  bgImage: '/country/USA.png',
-}, {
-  name: '英国',
-  flag: '/country/UK (1).png',
-  bgImage: '/country/UK.png',
-}, {
-  name: '新西兰',
-  flag: '/country/New Zealand (1).png',
-  bgImage: '/country/New Zealand.png',
-}, {
-  name: '新加坡',
-  flag: '/country/Singapore (1).png',
-  bgImage: '/country/Singapore.png',
-}, {
-  name: '加拿大',
-  flag: '/country/Canada (1).png',
-  bgImage: '/country/Canada.png',
-}, {
-  name: '澳大利亚',
-  flag: '/country/Australia.png',
-  bgImage: '/country/Australia.jpg',
-}, {
-  name: '香港',
-  flag: '/country/Hong Kong.png',
-  bgImage: '/country/Honkong.png',
-}]
-
-interface Country {
-  name: string;
-  flag: string;
-  bgImage: string;
-}
+import { useRouter } from 'next/router';
+import React, { use, useEffect, useState } from 'react';
+import { Country, countryData } from '../const';
 
 function Overview() {
-  const [current, setCurrent] = useState<Country>({
-    name: '美国',
-    flag: '/country/USA (1).png',
-    bgImage: '/country/USA.png',
-  })
+  const [current, setCurrent] = useState<Country>(countryData[0]);
   const {
     name,
     flag,
     bgImage,
   } = current
 
+  const router = useRouter();
   const onCountryChange = (e: any) => {
-    console.log('data show', e)
-    countryData.forEach(c => {
-      if(c.name === e.target.value) {
-        setCurrent(c)
-      }
-    })
+    router.push(e.target.value);
   }
+  useEffect(() => {
+    if (router?.query?.country) {
+      const target = countryData.filter(country => country.path === router?.query?.country );
+      setCurrent(target[0]);
+    }
+  }, [router])
 
   return (
     <Box
@@ -86,15 +49,15 @@ function Overview() {
               width='200px'
               size='lg'
               defaultValue='美国'
-              onChange={ onCountryChange }
+              onChange={onCountryChange}
             >
-              <option value='美国'>美国留学频道</option>
-              <option value='英国'>英国留学频道</option>
-              <option value='新西兰'>新西兰留学频道</option>
-              <option value='加拿大'>加拿大留学频道</option>
-              <option value='新加坡'>新加坡留学频道</option>
-              <option value='澳大利亚'>澳大利亚留学频道</option>
-              <option value='香港'>香港留学频道</option>
+              <option value='USA'>美国留学频道</option>
+              <option value='UK'>英国留学频道</option>
+              <option value='NewZealand'>新西兰留学频道</option>
+              <option value='Canada'>加拿大留学频道</option>
+              <option value='Singapore'>新加坡留学频道</option>
+              <option value='Australia'>澳大利亚留学频道</option>
+              <option value='HonKong'>香港留学频道</option>
             </Select>
           </Box>
           <Box fontWeight='600' fontSize='36px' marginBottom='64px'>

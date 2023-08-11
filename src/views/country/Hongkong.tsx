@@ -13,10 +13,6 @@ import HongkongSchool from './components/HongkongSchool'
 const American = ()=> {
   return (
     <Box>
-      <ModuleWrapper bg='white'>
-        <CountryTitle />
-      </ModuleWrapper>
-
       <ModuleWrapper bg='#F5F5F5'>
         <Reasons />
       </ModuleWrapper>
@@ -38,7 +34,7 @@ const American = ()=> {
       </ModuleWrapper>
 
       <ModuleWrapper bg='#F5F5F5' paddingX='40px'>
-        <HongkongSchool  maxWidth='1440px'/>
+        <HongkongSchool />
       </ModuleWrapper>
     </Box>
   );
