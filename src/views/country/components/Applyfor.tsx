@@ -77,7 +77,7 @@ function Applyfor() {
                   <Text fontSize='16px' fontWeight='600' textAlign='center'>{`美国${item.phase}申请条件`}</Text>
                   <Divider marginY='10px' opacity='1' borderColor='#4E4E4E' />
                   <Box display='flex' alignItems='center'>
-                    <Text color='red' fontSize='20px'>*</Text>
+                    <Text color='#0D0E67' fontSize='20px'>*</Text>
                     <Text>学历要求</Text>
                   </Box>
                   {
@@ -86,7 +86,7 @@ function Applyfor() {
                     ))
                   }
                   <Box display='flex' alignItems='center'>
-                    <Text color='red' fontSize='20px'>*</Text>
+                    <Text color='#0D0E67' fontSize='20px'>*</Text>
                     <Text>语言要求</Text>
                   </Box>
                   {

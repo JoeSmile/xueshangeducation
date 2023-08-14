@@ -60,7 +60,9 @@ function Profession() {
                   alignItems='center'
                   justifyContent='center'
                 >
-                  <Text color='red' fontWeight='600'>{item.subject}</Text>
+                  <Text color='#0D0E67' fontWeight='600' fontSize='22px' padding='8px' height='100%'
+                  width='100%' textAlign='center' lineHeight='85px'
+                  backgroundColor='rgba(255, 255, 255, 0.5)'>{item.subject}</Text>
                 </WrapItem>
               )
             }

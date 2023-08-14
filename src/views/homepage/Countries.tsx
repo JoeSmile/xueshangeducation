@@ -62,7 +62,7 @@ function Countries() {
                       left: 0,
                       zIndex: 1,
                       background: 'inherit',
-                      filter: 'blur(2px)'
+                      filter: 'blur(5px)'
                     }}
                     position='relative'
                     boxSizing='border-box'
@@ -74,11 +74,14 @@ function Countries() {
                     width='270px'
                     alignItems='center'
                     justifyContent='center'
-                    color='red'
+                    color='#0D0E67' 
                     >
-                    <CardBody gap={20} position='absolute' zIndex='10' height={160}>
+                    <CardBody gap={20} position='absolute' zIndex='10' 
+                        height='100%' fontWeight='600'  width='100%'
+                        borderRadius='4px'
+                        backgroundColor='rgba(255, 255, 255, 0.5)'>
                       <Center marginY='10px'>
-                        <Heading fontSize="42px">{product.title}</Heading>
+                        <Heading fontSize="42px" >{product.title}</Heading>
                       </Center>
                       <Center>
                         <Text fontWeight='bold' fontSize='16px'>{product.description}</Text>
