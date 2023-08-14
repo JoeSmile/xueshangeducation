@@ -13,13 +13,13 @@ import {
   HStack,
 } from '@chakra-ui/react'
 
-type ProcessItem = {
+export type ProcessItem = {
   title: string,
   description: string[],
   icon?: string
 }
 type ProcessItemsProps = {
-  ProcessItems: ProcessItem[]
+  ProcessItems?: ProcessItem[]
 }
 
 const ProcessIcons = [
