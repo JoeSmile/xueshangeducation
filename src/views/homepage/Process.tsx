@@ -13,7 +13,25 @@ import {
   HStack,
 } from '@chakra-ui/react'
 
-const ProcessItem = [{
+type ProcessItem = {
+  title: string,
+  description: string[],
+  icon?: string
+}
+type ProcessItemsProps = {
+  ProcessItems: ProcessItem[]
+}
+
+const ProcessIcons = [
+  '/homepage/process/fuIcon_1.jpg',
+  '/contry_problem/1.jpg',
+  '/contry_problem/2.png',
+  '/contry_problem/3.jpg',
+  '/contry_problem/4.jpg',
+  '/contry_problem/5.png',
+  '/contry_problem/6.jpg',
+]
+const DefaultProcessItem: ProcessItem[] = [{
   icon: '/homepage/process/fuIcon_1.jpg',
   title: '前期咨询',
   description: [
@@ -71,18 +89,18 @@ const ProcessItem = [{
   ],
 }, ];
 
-function Process() {
+function Process({ProcessItems = DefaultProcessItem}: ProcessItemsProps) {
   return (
     <VStack paddingBottom='30px'>
       <Box color='#0D0E67' fontSize='20px' fontWeight='600' marginY='20px'>在学尚，体验一站式留学服务</Box>
       <Flex width='100%' justifyContent='center' marginBottom={4}>
         <Wrap align='center' justify='center' width='100%'>
           {
-            ProcessItem.map((item, processIndex) => 
+            ProcessItems.map((item, processIndex) => 
               <WrapItem key={item.title}>
                 <HStack>
                   <VStack borderRadius='150px' alignItems='center' bg='#fff' paddingX='20px' paddingY='50px'>
-                    <Image src={item.icon} objectFit='cover' height='56px' alt='icon'/>
+                    <Image src={ProcessIcons[processIndex]} objectFit='cover' height='56px' alt='icon'/>
                     <Text fontSize='24px' fontWeight='600' color='#00B287'>{item.title}</Text>
                     <Divider />
                     <VStack>
@@ -91,7 +109,7 @@ function Process() {
                       ))}
                     </VStack>
                   </VStack>
-                  {processIndex !== ProcessItem.length - 1 && <Image src="/homepage/process/fuLine.png" objectFit='cover' height='30px' alt='icon'/>}
+                  {processIndex !== ProcessItems.length - 1 && <Image src="/homepage/process/fuLine.png" objectFit='cover' height='30px' alt='icon'/>}
                 </HStack>
               </WrapItem>
               )

@@ -13,7 +13,7 @@ import {
 import React, { useState } from 'react';
 import { top200Schools } from './top200'
 
-const RankNum = ['1-50', '51-100', '101-150', '151-200']
+const RankNum = ['1-64', '66-166', '172-199']
 interface SchoolItem {
   rank: number;
   school: string;
