@@ -69,13 +69,15 @@ type ReasonsProps = {
 
 function Reasons({ReasonItems = DefaultReasonItems, title='为什么赴美留学的人的人数逐年增长'}: ReasonsProps) {
   return (
-    <VStack paddingBottom='30px'>
+    <VStack paddingBottom='30px' mb='20px' >
       <Box color='#0D0E67' fontSize='20px' fontWeight='600' marginY='20px'>{title}</Box>
       <Flex width='100%' justifyContent='center' marginBottom={4}>
         <Wrap align='center' justify='center' width='100%'>
           {
             ReasonItems.map((item, index) => 
-              <WrapItem key={item.reason}>
+              <WrapItem key={item.reason}
+                alignSelf='self-start'
+              >
                 <Box
                   display='flex'
                   flexDirection='column'
@@ -84,12 +86,15 @@ function Reasons({ReasonItems = DefaultReasonItems, title='为什么赴美留学
                   paddingY='20px'
                   borderRadius='20px'
                   justifyContent='space-around'
-                  bg={`url(${ReasonIcons[index].bgImage}) no-repeat center center`}
+                  backgroundSize='cover'
+                  backgroundImage={`url(${ReasonIcons[index].bgImage})`}
+                  backgroundPosition='center'
+                  backgroundRepeat='no-repeat'
                 >
                   <Image src={ReasonIcons[index].icon} objectFit='cover' alt='icon'/>
                   <Text fontSize='16px' fontWeight='600' marginY='0'>{item.reason}</Text>
                   <Divider variant='dashed' marginY='10px' opacity='1' borderColor={ReasonIcons[index].dividerColor} />
-                  <Text width='200px' height='90px' fontSize='14px'>{item.description}</Text>
+                  <Text width='200px' minH='90px' fontSize='14px'>{item.description}</Text>
                   {
                     item.btnName && <Box
                     as='button'

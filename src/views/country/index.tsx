@@ -18,36 +18,7 @@ const countries: countriesType = {
   'USA': <American />,
   'HonKong': <Hongkong />
 }
-//    path: 'UK' NewZealand Singapore
 
-// export const menuList = [{
-//   name: '英国',
-//   path: 'UK'
-// }, {
-//   name: '美国',
-//   path: 'USA'
-// }, {
-//   name: '澳大利亚',
-//   path: 'Australia'
-// }, {
-//   name: '加拿大',
-//   path: 'Canada'
-// }, {
-//   name: '新西兰',
-//   path: 'NewZealand'
-// },{
-//   name: '新加坡',
-//   path: 'Singapore'
-// }, {
-//   name: '港澳',
-//   path: 'HonKong'
-// }, {
-//   name: '中外合办',
-//   path: 'cooperation'
-// }, {
-//   name: '关于我们',
-//   path: 'aboutus'
-// }];
 export const Country = ()=> {
   const router = useRouter();
   const pathname = usePathname();
