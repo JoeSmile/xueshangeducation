@@ -14,6 +14,7 @@ const Layout = (props: LayoutProps)=> {
     <VStack className='layout'
       margin='0 auto'
       minH='100%' {...restProps} spacing='0'
+      background='#F5F5F5'
     >
       <Header />
       <Box width='100%' margin='0 auto'>

@@ -67,7 +67,7 @@ function Profession() {
               )
             }
           </Wrap>
-          <VStack flex='2' alignItems='unset' spacing='14px' fontWeight='600'>
+          <VStack flex='2' alignItems='unset' spacing='14px' fontWeight='600' maxW='600px'>
             <Text>留学专业选择常见问题</Text>
             <Box>
               {

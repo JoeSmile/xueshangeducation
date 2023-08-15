@@ -4,7 +4,7 @@ import React from 'react';
 function CountryLayout({children}: {children: React.ReactNode}) {
   return (
     <Flex width='100%' justify='center'>
-      <Box maxWidth='1200px' width='100%'>
+      <Box  width='100%'>
         {children}
       </Box>
     </Flex>
