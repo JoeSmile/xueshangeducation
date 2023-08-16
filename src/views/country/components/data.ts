@@ -960,7 +960,257 @@ export const Schools:SchoolsType = {
   location: '',
   basicInfo: '奥克兰理工大学是新西兰第二大学，也是新西兰研究生增长最 快的大学。目前，奥克兰理了大学提供超过250个专业课程，主要学科门类有:建筑学、艺术与设计、商学、法学、理学、传媒学、教育学、工程学、创意技术、健康科学、旅游和酒店管理、语言和社会科学、计算机与数理学、体育和休闲运动学等',
 }],
-
-
 }
 
+
+export type Offer = {
+  logoUrl: string,
+  schoolName: string,
+  name: string,
+  graduateFrom?: string,
+  subject: string,
+  basicInfo?: string,
+}
+
+export type OffersCountryType = Record<string, Offer[]>
+export const OffersCountry: OffersCountryType = {
+  "UK": [
+    {
+      logoUrl: '/contry_school/UK/4.png',
+      schoolName: '英国G5伦敦政治经济学院录取',
+      name: 'J同学',
+      graduateFrom: '985院校',
+      subject: '经济学/均分：87/雅思 7/无GRE，GMAT',
+      basicInfo: '伦敦政治经济学院经济史硕士',
+    },
+    {
+      logoUrl: '/contry_school/UK/4.png',
+      schoolName: '英国G5伦敦大学学院录取',
+      name: 'W同学',
+      graduateFrom: '211院校',
+      subject: '应用心理学/均分：88+/雅思 7/无GRE，GMAT',
+      basicInfo: '伦敦大学学院教育心理学硕士',
+    },
+    {
+      logoUrl: '/contry_school/UK/5.png',
+      schoolName: '英国爱丁堡大学录取',
+      name: 'Y同学',
+      graduateFrom: '211院校',
+      subject: '经济学/均分：86+/雅思 7/无GRE，GMAT',
+      basicInfo: '爱丁堡大学经济学硕士',
+    },
+    {
+      logoUrl: '/contry_school/UK/8.png',
+      schoolName: '曼彻斯特大学录取',
+      name: 'Z同学',
+      graduateFrom: '211院校',
+      subject: '会计/均分：85+/PTE 66/无GRE，GMAT',
+      basicInfo: '曼彻斯特大学人力资源管理硕士',
+    },
+    {
+      logoUrl: '/contry_school/UK/9.png',
+      schoolName: '布里斯托大学录取',
+      name: 'L同学',
+      graduateFrom: '211院校',
+      subject: '电子信息工程/均分：80/无语言成绩/无GRE，GMAT',
+      basicInfo: '布里斯托大学金融科技硕士',
+    }
+  ],
+  "USA": [
+    {
+      logoUrl: '/contry_school/USA/10.png',
+      schoolName: '美国顶级名校约翰霍普金斯大学录取',
+      name: 'C同学',
+      graduateFrom: '211院校',
+      subject: '经济学专业/均分：85+/托福100+/GRE:320+',
+      basicInfo: '约翰霍普金斯大学应用经济学硕士',
+    },
+    {
+      logoUrl: '/contry_school/UK/9.png',
+      schoolName: '美国TOP30南加州大学录取',
+      name: 'S同学',
+      graduateFrom: '985院校',
+      subject: '经济学/均分：87/托福105/GRE:320+',
+      basicInfo: '南加州大学空间经济和数据分析硕士',
+    },
+  ],
+  "Canada": [
+    {
+      logoUrl: '/contry_school/canada/2.png',
+      schoolName: '多伦多大学',
+      name: 'Z同学',
+      graduateFrom: '复旦大学附属中学',
+      subject: '均分90+/雅思7.0',
+      basicInfo: 'Bacheor of life science',
+    },
+    {
+      logoUrl: '/contry_school/canada/1.png',
+      schoolName: '麦吉尔大学',
+      name: 'Z同学',
+      graduateFrom: '国内普通高中',
+      subject: '均分90+/雅思7.0',
+      basicInfo: '麦吉尔大学',
+    },
+    {
+      logoUrl: '/contry_school/canada/2.png',
+      schoolName: '多伦多大学MBA专业录取',
+      name: 'L同学',
+      graduateFrom: '',
+      subject: 'GPA不到3.0',
+      basicInfo: '多伦多大学MBA专业录取',
+    },
+    {
+      logoUrl: '/contry_school/canada/5.png',
+      schoolName: '加拿大本拿比公立教育局录取',
+      name: 'Z同学',
+      graduateFrom: '郑州某私立初中',
+      subject: '',
+      basicInfo: '成功录取BC省排名靠前的本拿比山高中',
+    },
+    {
+      logoUrl: '/contry_school/canada/8.png',
+      schoolName: '卡尔加里大学',
+      name: 'W同学',
+      graduateFrom: '海南大学',
+      subject: '雅思7/GRE：310+/数学和应用数学专业 GPA3.5+',
+      basicInfo: '卡尔加里大学',
+    },
+    {
+      logoUrl: '/contry_school/canada/4.png',
+      schoolName: '麦克马斯特大',
+      name: 'T同学',
+      graduateFrom: '南京信息工程大学',
+      subject: '本科计算机专业/GPA3.7/托福106',
+      basicInfo: '麦克马斯特大学计算机软件工程',
+    }    
+          
+  ],
+  "Australia": [
+    {
+      logoUrl: '/contry_school/Australia/3.png',
+      schoolName: '悉尼大学',
+      name: 'Y同学',
+      graduateFrom: '国内双非一本院校',
+      subject: '化工/均分：84/无雅思/无GRE，GMAT',
+      basicInfo: '悉尼大学 经济学硕士',
+    },
+    {
+      logoUrl: '/contry_school/Australia/2.png',
+      schoolName: '墨尔本大学',
+      name: 'R同学',
+      graduateFrom: '双非院校',
+      subject: '播音主持专业/均分：83+/雅思 无/无GRE，GMAT',
+      basicInfo: '墨尔本大学  执行文学硕士',
+    },
+    {
+      logoUrl: '/contry_school/Australia/3.png',
+      schoolName: '悉尼大学媒体实践硕士',
+      name: 'S同学',
+      graduateFrom: '独立院校',
+      subject: '播音主持',
+      basicInfo: '悉尼大学媒体实践硕士',
+    },
+    {
+      logoUrl: '/contry_school/Australia/3.png',
+      schoolName: '悉尼大学',
+      name: 'Q同学',
+      graduateFrom: '',
+      subject: '数字文化专业/均分：60%',
+      basicInfo: '悉尼大学数字传播和文化硕士',
+    },
+    {
+      logoUrl: '/contry_school/Australia/3.png',
+      schoolName: '悉尼大学',
+      name: 'Z同学',
+      graduateFrom: '211院校',
+      subject: '电子信息工程/均分：81',
+      basicInfo: '悉尼大学电气工程硕士',
+    }
+  ],
+  "HonKong": [
+    {
+      logoUrl: '/contry_school/HonKong/2.png',
+      schoolName: '港中文大学',
+      name: 'Y同学',
+      graduateFrom: '国内双非一本院校',
+      subject: '工商管理/均分：85+/雅思 7',
+      basicInfo: '港中文 电子商务和物流管理',
+    },
+    {
+      logoUrl: '/contry_school/HonKong/2.png',
+      schoolName: '港中文大学',
+      name: 'R同学',
+      graduateFrom: '211院校',
+      subject: '法律/均分：87/雅思 6.5',
+      basicInfo: '港中文  国际商法硕士',
+    },
+    {
+      logoUrl: '/contry_school/HonKong/1.png',
+      schoolName: '香港大学',
+      name: 'S同学',
+      graduateFrom: '211院校',
+      subject: '信息系统管理/雅思：7',
+      basicInfo: '香港大学  商业分析硕士',
+    },
+    {
+      logoUrl: '/contry_school/HonKong/3.png',
+      schoolName: '香港科技大学',
+      name: 'F同学',
+      graduateFrom: '985院校',
+      subject: '计算机/均分：87+/雅思 7',
+      basicInfo: '香港科技大学  计算机硕士',
+    },
+    {
+      logoUrl: '/contry_school/HonKong/2.png',
+      schoolName: '香港中文大学计算机硕士',
+      name: 'Z同学',
+      graduateFrom: '985院校',
+      subject: '均分80+ 雅思6.5',
+      basicInfo: '香港中文大学',
+    }
+  ],
+  "Singapore": [
+    {
+      logoUrl: '/contry_school/Singapore/1.png',
+      schoolName: '新加坡国立大学录取',
+      name: 'Z同学',
+      graduateFrom: '211院校',
+      subject: '法学专业/均分：88+/雅思 7/无GRE，GMAT',
+      basicInfo: '新加坡国立大学法学硕士',
+    },
+    {
+      logoUrl: '/contry_school/Singapore/2.png',
+      schoolName: '新加坡南洋理工大学知识管理硕士',
+      name: 'Y同学',
+      graduateFrom: '211新浪部门经理  双非统招本科院校',
+      subject: '人力资源管理专业/均分：85+',
+      basicInfo: '新加坡南洋理工大学知识管理硕士',
+    },
+  ],
+  "NewZealand": [
+    {
+      logoUrl: '/contry_school/NewZealand/2.png',
+      schoolName: '爱尔兰圣三一大学英语语言教学硕士录取',
+      name: 'J同学',
+      graduateFrom: '本科双非院校',
+      subject: '均分：85+/有1年教学工作经验，无雅思',
+      basicInfo: '爱尔兰圣三一大学英语语言教学硕士录取',
+    },
+    {
+      logoUrl: '/contry_school/NewZealand/1.png',
+      schoolName: '奥克兰大学国际商务硕士',
+      name: 'W同学',
+      graduateFrom: '双非二本',
+      subject: '书法专业/均分：87/雅思 7/无GRE，GMAT',
+      basicInfo: '奥克兰大学国际商务硕士',
+    },
+    {
+      logoUrl: '/contry_school/NewZealand/1.png',
+      schoolName: '奥克兰大学媒体和荧幕研究硕士',
+      name: 'Y同学',
+      graduateFrom: '独立学院',
+      subject: '播音主持/均分：83/有3年行业相关工作经验',
+      basicInfo: '奥克兰大学媒体和荧幕研究硕士',
+    },
+  ],
+}

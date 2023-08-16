@@ -9,7 +9,7 @@ import ModuleWrapper from '@/components/moduleWrapper';
 import CountryTitle from './components/CountryTitle';
 import { usePathname } from 'next/navigation';
 import Reasons from './components/Reasons';
-import { ApplyForData, ReasonsData, Schools, TimeLines } from './components/data';
+import { ApplyForData, OffersCountry, ReasonsData, Schools, TimeLines } from './components/data';
 import Applyfor from './components/Applyfor';
 import Process from '../homepage/Process';
 import { HomePageProcessItem } from '../homepage/data';
@@ -17,6 +17,7 @@ import { Box } from '@chakra-ui/react';
 import ApplyProblems from './components/ApplyProblems';
 import { countryData } from './const';
 import PopularSchool from './components/PopularSchool';
+import OfferExample from '../homepage/OfferExample';
 
 type countriesType = {
   [key: string]: React.ReactNode
@@ -60,6 +61,9 @@ export const Country = ()=> {
           <PopularSchool schools={Schools[country]}/>
         </ModuleWrapper>
 
+        <ModuleWrapper bg='#F5F5F5'>
+          <OfferExample offerList={OffersCountry[country]}/>
+        </ModuleWrapper>
       </CountryLayout>
     </Layout>
   );

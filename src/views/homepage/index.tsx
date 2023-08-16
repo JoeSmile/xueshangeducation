@@ -42,9 +42,9 @@ export const Homepage = ()=> {
         <Rank />
       </ModuleWrapper>
 
-      <ModuleWrapper bg='#F5F5F5'>
+      {/* <ModuleWrapper bg='#F5F5F5'>
         <Consult />
-      </ModuleWrapper>
+      </ModuleWrapper> */}
     </Layout>
   );
 }
