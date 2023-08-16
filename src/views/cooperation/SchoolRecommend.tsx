@@ -10,51 +10,93 @@ import React from 'react';
 const SchollList = [{
   title: '2+2留学院校推荐',
   school: [{
-    icon: '/logo.png',
-    name: '北京外国语大学',
+    icon: '/cooperation/22/1.png',
+    name: '上海大学',
   }, {
-    icon: '/logo.png',
-    name: '上海外国语大学',
+    icon: '/cooperation/22/2.png',
+    name: '北京理工大学',
   }, {
-    icon: '/logo.png',
+    icon: '/cooperation/22/3.png',
     name: '中央财经大学',
   }, {
-    icon: '/logo.png',
-    name: '中国传媒大学',
+    icon: '/cooperation/22/4.png',
+    name: '集美大学',
   }, {
-    icon: '/logo.png',
-    name: '西南政法大学',
+    icon: '/cooperation/22/5.png',
+    name: '吉林大学',
   }, {
-    icon: '/logo.png',
-    name: '华南师范大学',
+    icon: '/cooperation/22/6.png',
+    name: '武汉理工大学',
   }]
 }, {
-  title: '3+2留学院校推荐',
+  title: '3+1留学院校推荐',
   school: [{
-    icon: '/logo.png',
-    name: '北京外国语大学',
+    icon: '/cooperation/31/1.png',
+    name: '北京理工大学',
   }, {
-    icon: '/logo.png',
+    icon: '/cooperation/31/2.png',
     name: '上海外国语大学',
   }, {
-    icon: '/logo.png',
+    icon: '/cooperation/31/3.png',
+    name: '暨南大学',
+  }, {
+    icon: '/cooperation/31/4.png',
     name: '中央财经大学',
   }, {
-    icon: '/logo.png',
+    icon: '/cooperation/31/5.png',
+    name: '济南大学',
+  }, {
+    icon: '/cooperation/31/6.png',
+    name: '广东财经大学',
+  }]
+}, {
+  title: '2+0留学院校推荐',
+  school: [{
+    icon: '/cooperation/20/1.png',
+    name: '对外经贸大学',
+  }, {
+    icon: '/cooperation/20/2.png',
+    name: '北京邮电大学',
+  }, {
+    icon: '/cooperation/20/3.png',
+    name: '上海财经大学',
+  }, {
+    icon: '/cooperation/20/4.png',
+    name: '上海交通大学',
+  }, {
+    icon: '/cooperation/20/5.png',
+    name: '北京科技大学',
+  }, {
+    icon: '/cooperation/20/6.png',
+    name: '中国传媒大学',
+  }]
+}, {
+  title: '4+0留学院校推荐',
+  school: [{
+    icon: '/cooperation/40/1.png',
+    name: '中央财经大学',
+  }, {
+    icon: '/cooperation/40/2.png',
+    name: '上海外国语大学',
+  }, {
+    icon: '/cooperation/40/3.png',
+    name: '暨南大学',
+  }, {
+    icon: '/cooperation/40/4.png',
     name: '中国传媒大学',
   }, {
-    icon: '/logo.png',
-    name: '西南政法大学',
+    icon: '/cooperation/40/5.png',
+    name: '南京审计大学',
   }, {
-    icon: '/logo.png',
-    name: '华南师范大学',
+    icon: '/cooperation/40/6.png',
+    name: '上海财经大学',
   }]
 }]
 
 function SchoolRecommend() {
   return (
     <VStack>
-      <Text fontSize='40px' fontWeight='600' color='#FF5B0B' marginBottom='20px'>中外合作留学院校推荐</Text>
+      <Text fontSize='40px' fontWeight='600' color='#0D0E67' marginBottom='20px'>中外合作留学院校推荐</Text>
       <VStack>
         {
           SchollList.map((schoolItem, schoolIndex) => (
@@ -84,6 +126,7 @@ function SchoolRecommend() {
                   >
                     <VStack>
                       <Box
+                        backgroundRepeat='no-repeat'
                         backgroundImage={item.icon}
                         height='90px'
                         width='120px'

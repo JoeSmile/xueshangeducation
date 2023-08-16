@@ -49,7 +49,7 @@ function AbroadMode() {
   return (
     <VStack>
       <Box
-        color='#FF5B0B'
+        color='#0D0E67'
         fontSize='40px'
         fontWeight='600'
       >
@@ -72,7 +72,7 @@ function AbroadMode() {
               <Box margin='0 auto'>
                 <Box
                   as='span'
-                  bg='#FF5B0B'
+                  bg='#0D0E67'
                   color='#fff'
                   fontSize='20px'
                   fontWeight='600'
@@ -83,7 +83,7 @@ function AbroadMode() {
                   {item.type}
                 </Box>
                 <Box
-                    border='2px solid #FF5B0B'
+                    border='2px solid #0D0E67'
                     padding='20px'
                     borderRadius='10px'
                     borderTopLeftRadius='0'
@@ -103,12 +103,12 @@ function AbroadMode() {
                       </Box>
                       <Box
                         as='span'
-                        color='#FF5B0B'
+                        color='#0D0E67'
                       >
                         获得国外学士学位
                       </Box>
                     </Box>
-                    <Divider bg='#FF5B0B' variant='dashed' />
+                    <Divider bg='#0D0E67' variant='dashed' />
                     {
                       item.discription.map((i, discriptionIndex) => (
                         <Box fontSize='12px' key={discriptionIndex} marginBottom='5px' display='flex' alignItems='center' color='#18006C'>

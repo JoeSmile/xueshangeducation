@@ -8,13 +8,19 @@ import Process from '../../views/homepage/Process';
 import OfferExample from '../../views/homepage/OfferExample';
 import Rank from '../../views/homepage/Rank';
 import Consult from '../../views/homepage/Consult'
+import ImageSwiper from '@/components/imageSwiper';
+
+const images = [{
+  src: '/homepage/swiper/1.jpg'
+}, {
+  src: '/homepage/swiper/2.jpg'
+}]
 
 export const Cooperation = ()=> {
   return (
     <Layout>
-      <ModuleWrapper bg='white'>
-        <Overview />
-      </ModuleWrapper>
+      <ImageSwiper images={images}/>
+
 
       <ModuleWrapper bg='white'>
         <AbroadMode />
