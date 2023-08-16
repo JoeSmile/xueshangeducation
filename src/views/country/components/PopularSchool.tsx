@@ -1,5 +1,6 @@
 import { Card, Flex, VStack, Wrap, WrapItem, Text, Image, Box, HStack } from '@chakra-ui/react';
 import React from 'react';
+import { School } from './data';
 
 const offerList = [{
   logoUrl: '/contry_school/pu.gif',
@@ -57,14 +58,18 @@ const offerList = [{
   basicInfo: '多伦多大学是加拿大规模最大的大学，创立于1827年，有14个院系、300个学士点、148个硕士和95个博士点。学校拥有一大批才华出众、成就突出的 学者，占全加拿大的学者总数的7%，所获著名科研奖项占全国的近1/4。学校的生源也很优秀，平均录取水平在会考成绩85%以上',
 }]
 
-function PopularSchool() {
+type PopularSchoolProps = {
+  schools?: School[]
+}
+
+function PopularSchool({ schools = offerList }: PopularSchoolProps) {
   return (
     <VStack paddingBottom='30px'>
       <Box color='#0D0E67' fontSize='20px' fontWeight='600' marginY='20px'>选校不迷茫 热门院校推荐</Box>
       <Flex width='100%' justifyContent='center'>
         <Wrap spacing='30px' width='1200px'>
           {
-            offerList.map(item => 
+            schools.map(item => 
               <WrapItem key={item.name} width='30%' height='230px' alignItems='unset'>
                 <Card width='100%' paddingX='30px' paddingY='10px' borderRadius='20px'>
                   <HStack

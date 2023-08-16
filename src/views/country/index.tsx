@@ -9,20 +9,17 @@ import ModuleWrapper from '@/components/moduleWrapper';
 import CountryTitle from './components/CountryTitle';
 import { usePathname } from 'next/navigation';
 import Reasons from './components/Reasons';
-import { ApplyForData, ReasonsData, TimeLines } from './components/data';
+import { ApplyForData, ReasonsData, Schools, TimeLines } from './components/data';
 import Applyfor from './components/Applyfor';
 import Process from '../homepage/Process';
 import { HomePageProcessItem } from '../homepage/data';
 import { Box } from '@chakra-ui/react';
 import ApplyProblems from './components/ApplyProblems';
 import { countryData } from './const';
+import PopularSchool from './components/PopularSchool';
 
 type countriesType = {
   [key: string]: React.ReactNode
-}
-const countries: countriesType = {
-  'USA': <American />,
-  'HonKong': <Hongkong />
 }
 
 export const Country = ()=> {
@@ -33,7 +30,7 @@ export const Country = ()=> {
   useEffect(() => {
     setCountry((router?.query?.country ?? 'USA') as string);
     const name = countryData.filter(item => item.path == router?.query?.country)[0];
-    setCountryName(name.name);
+    setCountryName(name?.name ?? '美国');
   }, [router]);
 
   return (
@@ -59,11 +56,11 @@ export const Country = ()=> {
           <ApplyProblems applyItems={TimeLines[country]} country={countryName}/>
         </ModuleWrapper>
         
-        <Box>------------------</Box>
+        <ModuleWrapper bg='#F5F5F5'>
+          <PopularSchool schools={Schools[country]}/>
+        </ModuleWrapper>
+
       </CountryLayout>
-      {
-        countries[(router?.query?.country as string)]
-      }
     </Layout>
   );
 }

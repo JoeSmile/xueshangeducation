@@ -200,7 +200,7 @@ export const ApplyForData: ApplyForDataType ={
         '1、TOEFL托福80或雅思6.5，部分院校要求托福100分或雅思7.0分以上。',
         '2、SAT达到1420以上，院校不同要求不同；',
       ],
-      bottomWord: '美国低龄申请条件',
+      bottomWord: '英国低龄申请条件',
     }, {
       phase: '低龄',
       academic: [
@@ -273,7 +273,7 @@ export const ApplyForData: ApplyForDataType ={
         '1、TOEFL托福80或雅思6.5，部分院校要求托福100分或雅思7.0分以上。',
         '2、SAT达到1420以上，院校不同要求不同；',
       ],
-      bottomWord: '美国低龄申请条件',
+      bottomWord: '港澳低龄申请条件',
     }, {
       phase: '低龄',
       academic: [
@@ -309,7 +309,7 @@ export const ApplyForData: ApplyForDataType ={
         '1、TOEFL托福80或雅思6.5，部分院校要求托福100分或雅思7.0分以上。',
         '2、SAT达到1420以上，院校不同要求不同；',
       ],
-      bottomWord: '美国低龄申请条件',
+      bottomWord: '澳大利亚低龄申请条件',
     }, {
       phase: '低龄',
       academic: [
@@ -345,7 +345,7 @@ export const ApplyForData: ApplyForDataType ={
         '1、TOEFL托福80或雅思6.5，部分院校要求托福100分或雅思7.0分以上。',
         '2、SAT达到1420以上，院校不同要求不同；',
       ],
-      bottomWord: '美国低龄申请条件',
+      bottomWord: '加拿大低龄申请条件',
     }, {
       phase: '低龄',
       academic: [
@@ -381,7 +381,7 @@ export const ApplyForData: ApplyForDataType ={
         '1、TOEFL托福80或雅思6.5，部分院校要求托福100分或雅思7.0分以上。',
         '2、SAT达到1420以上，院校不同要求不同；',
       ],
-      bottomWord: '美国低龄申请条件',
+      bottomWord: '新加坡低龄申请条件',
     }, {
       phase: '低龄',
       academic: [
@@ -417,7 +417,7 @@ export const ApplyForData: ApplyForDataType ={
         '1、TOEFL托福80或雅思6.5，部分院校要求托福100分或雅思7.0分以上。',
         '2、SAT达到1420以上，院校不同要求不同；',
       ],
-      bottomWord: '美国低龄申请条件',
+      bottomWord: '新西兰低龄申请条件',
     }, {
       phase: '低龄',
       academic: [
@@ -596,3 +596,371 @@ export const TimeLines: TimeLines = {
     description: '获得签证，赴美丽的新西兰',
   }]
 }
+
+
+// school list
+
+export type School = {
+  logoUrl: string,
+  name: string,
+  englishName: string,
+  location: string,
+  basicInfo: string
+}
+
+export type SchoolsType = Record<string, School[]>;
+
+export const Schools:SchoolsType = {
+'UK': [{
+  logoUrl: '/contry_school/UK/1.png',
+  name: '剑桥大学',
+  englishName: 'University of Cambridge',
+  location: '英格兰剑桥郡剑桥市',
+  basicInfo: '世界大学排名 排名：3',
+}, {
+  logoUrl: '/contry_school/UK/2.png',
+  name: '牛津大学',
+  englishName: 'University of Oxford',
+  location: '英格兰牛津郡牛津市',
+  basicInfo: '世界大学排名 排名：1',
+}, {
+  logoUrl: '/contry_school/UK/3.png',
+  name: '帝国理工学院',
+  englishName: 'Imperial College London',
+  location: '英格兰伦敦',
+  basicInfo: '世界大学排名 排名：10',
+}, {
+  logoUrl: '/contry_school/UK/4.png',
+  name: '伦敦大学学院',
+  englishName: 'University College London',
+  location: '英格兰伦敦',
+  basicInfo: '世界大学排名 排名：22',
+}, {
+  logoUrl: '/contry_school/UK/5.png',
+  name: '爱丁堡大学',
+  englishName: 'The University of Edinburgh',
+  location: '苏格兰爱丁堡',
+  basicInfo: '世界大学排名 排名：29',
+}, {
+  logoUrl: '/contry_school/UK/6.png',
+  name: '伦敦国王学院',
+  englishName: `King's College London`,
+  location: '英格兰伦敦西敏市',
+  basicInfo: '世界大学排名 排名：35',
+}, {
+  logoUrl: '/contry_school/UK/7.png',
+  name: '伦敦政治经济学院',
+  englishName: 'LSE',
+  location: '英格兰伦敦',
+  basicInfo: '世界大学排名 排名：37',
+}, {
+  logoUrl: '/contry_school/UK/8.png',
+  name: '曼彻斯特大学',
+  englishName: 'University of Manchester',
+  location: '英格兰曼彻斯特',
+  basicInfo: '世界大学排名 排名：54',
+}, {
+  logoUrl: '/contry_school/UK/9.png',
+  name: '布里斯托大学',
+  englishName: 'University of Bristol',
+  location: '英格兰布里斯托',
+  basicInfo: '世界大学排名 排名：76',
+}],
+
+'USA': [{
+  logoUrl: '/contry_school/USA/1.png',
+  name: '普林斯顿大学',
+  englishName: 'Princeton University',
+  location: '新泽西州',
+  basicInfo: '2022 U.S.News 排名：1',
+}, {
+  logoUrl: '/contry_school/USA/2.png',
+  name: '哥伦比亚大学',
+  englishName: 'Columbia University in the City of New York',
+  location: '纽约州',
+  basicInfo: '2022 U.S.News 排名：2',
+}, {
+  logoUrl: '/contry_school/USA/3.png',
+  name: ' 哈佛大学',
+  englishName: 'Harvard University',
+  location: '马萨诸塞州',
+  basicInfo: '2022 U.S.News 排名：2',
+}, {
+  logoUrl: '/contry_school/USA/4.png',
+  name: '麻省理工学院',
+  englishName: 'Massachusetts Institute of Technology',
+  location: '马萨诸塞州',
+  basicInfo: '2022 U.S.News 排名：2',
+}, {
+  logoUrl: '/contry_school/USA/5.png',
+  name: '耶鲁大学',
+  englishName: 'Yale University',
+  location: '康涅狄格州',
+  basicInfo: '2022 U.S.News 排名：5',
+}, {
+  logoUrl: '/contry_school/USA/6.png',
+  name: '斯坦福大学',
+  englishName: `Stanford University`,
+  location: '加利福尼亚州',
+  basicInfo: '2022 U.S.News 排名：6',
+}, {
+  logoUrl: '/contry_school/USA/7.png',
+  name: '宾夕法尼亚大学',
+  englishName: 'University of Pennsylvania',
+  location: '宾夕法尼亚州',
+  basicInfo: '2022 U.S.News 排名：8', 
+}, {
+  logoUrl: '/contry_school/USA/8.png',
+  name: '杜克大学',
+  englishName: 'Duke University',
+  location: '北卡罗莱纳州',
+  basicInfo: '2022 U.S.News 排名：9',
+}, {
+  logoUrl: '/contry_school/USA/9.png',
+  name: '加州理工学院',
+  englishName: 'California Institute of Technology',
+  location: '加利福尼亚州',
+  basicInfo: '2022 U.S.News 排名：9',
+}],
+
+'Canada': [{
+  logoUrl: '/contry_school/canada/1.png',
+  name: '麦吉尔大学',
+  englishName: 'McGill University',
+  location: 'Montréal QC',
+  basicInfo: '2022麦考林排名:医博类-1',
+}, {
+  logoUrl: '/contry_school/canada/2.png',
+  name: '多伦多大学',
+  englishName: 'University of Toronto',
+  location: 'Toronto ON',
+  basicInfo: '2022麦考林排名:商科-2',
+}, {
+  logoUrl: '/contry_school/canada/3.png',
+  name: '英属哥伦比亚大学',
+  englishName: 'The University of British Columbia',
+  location: 'Vancouver BC',
+  basicInfo: '2022麦考林排名:商科-1',
+}, {
+  logoUrl: '/contry_school/canada/4.png',
+  name: '麦克马斯特大学',
+  englishName: 'Hamilton ON',
+  location: '马萨诸塞州',
+  basicInfo: '2022麦考林排名:工程-6',
+}, {
+  logoUrl: '/contry_school/canada/5.png',
+  name: '女王大学',
+  englishName: `Queen's University`,
+  location: 'Kingston ON',
+  basicInfo: '2022麦考林排名:商科-4',
+}, {
+  logoUrl: '/contry_school/canada/6.png',
+  name: '阿尔伯塔大学',
+  englishName: `University of Alberta`,
+  location: 'Edmonton AB',
+  basicInfo: '2022麦考林排名:计算机-5',
+}, {
+  logoUrl: '/contry_school/canada/7.png',
+  name: '渥太华大学',
+  englishName: 'University of Ottawa',
+  location: 'Ottawa ON',
+  basicInfo: '2022麦考林排名:计算机-8', 
+}, {
+  logoUrl: '/contry_school/canada/8.png',
+  name: '戴尔豪斯大学',
+  englishName: 'Dalhousie University',
+  location: 'Halifax NS',
+  basicInfo: '2022麦考林排名:医博类-8',
+}],
+
+'Australia': [{
+  logoUrl: '/contry_school/Australia/1.png',
+  name: '澳大利亚国立大学',
+  englishName: 'The Australian National University',
+  location: 'Canberra',
+  basicInfo: '由澳大利亚政府创建，是当时澳大利亚唯一一所专门从事研究的大学。澳大利亚国立大学对于教育深入研究保证学生的教学质量，教学不仅限于课堂学习还提供研究和实习等机会帮助学生获得社会经验。澳洲国立大学拥有世界一流的设施，包括澳大利亚最 先进的计算机、现代化的实验室和演讲礼堂，拥有两百多万册藏书的图书馆。澳洲国立大学与政府、商业组织和研究机构都建立了密切联系这也为今后毕业生实习及就业有很好地帮助',
+}, {
+  logoUrl: '/contry_school/Australia/2.png',
+  name: '墨尔本大学',
+  englishName: 'The University of Melbourn',
+  location: 'Melbourne',
+  basicInfo: '历史悠久有着150多年的教学经验，突出专业有: 建筑、文学、商学、教育、工程、土地和食品资源、法律、医学、音乐、科学和兽医，都在国际上有着很高的声誉。图书馆是澳洲最古老和最大的图书馆之一，拥有藏书超过300万册',
+}, {
+  logoUrl: '/contry_school/Australia/3.png',
+  name: '悉尼大学',
+  englishName: 'The University of Sydney',
+  location: 'Sydney',
+  basicInfo: '广泛的机会:悉尼大学提供广泛的个人发展的机会，广泛的学科，和跨学科的研究，独特的见解和突破也是悉尼大学极力提倡的。教师及研究:悉尼大学的研究人员追求尖端的突破，打破学科间的障碍来找出改善人类生活的方法。师资 雄厚，科研卓越，学生也表现出色',
+}, {
+  logoUrl: '/contry_school/Australia/4.png',
+  name: '新南威尔士大学',
+  englishName: 'The University of New South Wales',
+  location: 'Sydney',
+  basicInfo: '新南威尔士大学设有广泛的本科和研究生课程以及研究项目。新南威尔士大学已经成为一所重要的高等学府，凭借其丰富的教学经验在大学中具有权 威性。新南威尔士大学为其优秀的教学而自豪，在澳大利亚经常被评为顶级的大学。新南威尔士大学与商业，工业，政府和社会都有紧密的联系',
+}, {
+  logoUrl: '/contry_school/Australia/5.png',
+  name: '昆士兰大学',
+  englishName: `The University of Queensland`,
+  location: 'Queensland',
+  basicInfo: '昆士兰大学是澳大利亚首屈一指的高等学府和科研机构，是昆士兰最古老的大学。昆士兰大学拥有昆士兰州最大的图书馆，内有200万册藏书和丰富的多媒体信息资源。昆士兰大学的学生都可以免费使用互联网。昆士兰大学的工作人员和学生来自134多个国家，是一个多元文化的大学',
+}, {
+  logoUrl: '/contry_school/Australia/6.png',
+  name: '蒙纳士大学',
+  englishName: `Monash University`,
+  location: 'Melbourne',
+  basicInfo: '是澳大利亚的一所大型公立综合性大学，成立于1958年，位于维多利亚洲首府墨尔本市，属澳洲八大名校之一，五星级大学。就业率为77.7%，毕业率为79.6%，师生比例为1:18',
+}, {
+  logoUrl: '/contry_school/Australia/7.png',
+  name: '西澳大学',
+  englishName: 'University of Western Australia',
+  location: 'Perth',
+  basicInfo: '西澳大学拥有来自80多个国家的师生，他们有着不同的背景文化，更加丰富了大学的环境。西澳大学在研究上的强大基础和就学创新给学生提供了一个良好的学术环境。除了定期提供一些信息外(如讲座，辅导，指导研究，实地考察和学生实习等信息)，西澳大学还为学生提供实习的机会，帮助学生积累工作经验', 
+}, {
+  logoUrl: '/contry_school/Australia/8.png',
+  name: '阿德莱德大学',
+  englishName: 'The University of Adelaide',
+  location: 'Adelaide',
+  basicInfo: '阿德雷德大学是澳大利亚最好的大学之一，并且在世界大学中一直名列前茅。阿德雷德大学拥有国际公认的优质教学，并目学生毕业后也会有不错的职业生涯。阿德雷德大学是澳大利亚第三所最古老的大学，并且是一个有潜力的，外向型的学校',
+}, {
+  logoUrl: '/contry_school/Australia/8.png',
+  name: '悉尼科技大学',
+  englishName: 'University of Technology Sydney',
+  location: 'Sydney',
+  basicInfo: '在校学生人数超过32000名，其中海外留学生8000多名分别来自不同的国家。学校一直以其在理工科及管理方面的优秀表现而闻名，该校与当地工商界、政府部门及社团合作良好，毕业生就业率居澳洲各大学之首。其中以机械工程、计算机.管理、护理等课程最为突出',
+}],
+
+'HonKong': [{
+  logoUrl: '/contry_school/HonKong/1.png',
+  name: '香港大学',
+  englishName: 'The University of Hong Kong',
+  location: '香港中西区',
+  basicInfo: '香港大学是中国香港的一所综合性国际化公立研究型大学，有亚洲“常春藤”之称。香港大学奠基于1910年3月16日，次年3月30日正式注册成立，其前身为香港西医书院，是香港历史最悠久的高等教育',
+}, {
+  logoUrl: '/contry_school/HonKong/2.png',
+  name: '香港中文大学',
+  englishName: '香港中文大学 The Chinese University of Hong Kong',
+  location: '香港新界沙田',
+  basicInfo: '香港中文大学历史始于1963年，是一所国际化公立研究型综合大学，在人文学科、数学、计算机科学、经济与金融、医学、法律、传媒、地理等领域堪称学术重镇，也是香港唯一有诺贝尔奖、菲尔兹奖、图灵奖及香农奖得主任教的大学。 该校以“结合传统与现代，融会中国与西方”为使命，以灵活学分制、书院制、中英兼重和多元文化为特色，是环太平洋大学联盟、世界大学联盟、松联盟、中国大学校长联谊会成员，亚洲首家AACSB认证成员，香港互联网交换中心所在地。 根据国际学术网站Research公布的2022年大学及科学家排名，香港中文大学心理学学科位列中国第1位，计算机科学、医学、经济及金融、生物学及生物化学4个学科位列中国第2位，微生物学学科位列中国第3位。此外，计算机科学、经济及金融、心理学、植物科学及农艺学、生物学及生物化学、基因及分子生物学6个学科排名靠前',
+}, {
+  logoUrl: '/contry_school/HonKong/3.png',
+  name: '香港科技大学',
+  englishName: 'The Hong Kong University of Science and Technology',
+  location: '香港新界西贡区',
+  basicInfo: '香港科技大学是香港政府为配合1980年代经济结构转型需要而创办的香港第三所大学，是香港第一所研究型大学。香港科技大学为环太平洋大学联盟、全球大学校长论坛、东亚研究型大学协会、亚洲大学联盟、中国大学校长联谊会重要成员，并获AACSB和EQUIS双重认证，是一所世界知名研究型大学。 该校以科技和商业管理为主、人文及社会科学并重，尤以商科和工科见长，在物理、工程、工商管理、生物科学及生物技术、环境及可持续发展等领域均取得显著成就。 2022年4月，QS世界大学学科排名发布，香港科技大学有14个科目进入全球50强，并入选亚洲十佳大学',
+}, {
+  logoUrl: '/contry_school/HonKong/4.png',
+  name: '香港城市大学',
+  englishName: 'City University of Hong Kong',
+  location: '香港九龙塘',
+  basicInfo: '香港城市大学成立于1994年，是一所充满朝气的大学，其地理位置独特，位于香港这个东西方汇集的亚洲国际都会中心。以创新精神专注于研究及专业教育两大领域，致力为全球议题寻找解决方案，并推动有益社会的转变，追求卓越、促进创新、培育创意，造福社会和服务全球。 城大是一所现代化国际大学，注重多元化、跨文化学习与全球视野。城大拥有优良的师资，与国际学术界建立了密切广泛的合作网络。城大的毕业生成长为杰出专业人士，具备广纳新知、灵活应变、细心思虑、乐于回馈社会的特质。 城大在国际大学排名榜上表现出色，位居全球第54位；而根据史丹福大学最新公布的排名指标，逾140位论文被高度引用的城大教研人员，获列入全球排名前2%科学家，反映大学极高的学术水平及卓越研究成就。在商科、理工科、社科、文科领域都有优势专业',
+}, {
+  logoUrl: '/contry_school/HonKong/5.png',
+  name: '香港理工大学',
+  englishName: `The Hong Kong Polytechnic University`,
+  location: '香港九龙红磡',
+  basicInfo: '香港理工大学是一所位于中国香港的公立综合性研究型大学。致力培育慎思明辨、勇于探索求知、富于创见和能言善道的学生，让他们为世界带来正面影响。理大专注于跨学科研究，研发具长远影响力且能应对现实生活问题的创新科技。透过启发创新意念、促进可持续发展、提高经济成果，以及优化社区生活，以造福香港、国家以至全世界。 在最新发布的 QS 2022年度世界大学学科排名，理大有六个学科及一个学术范畴跻身全球首50位之内。这排名结果印证了理大在多个学科范畴领先全球。理大将继往开来，在教育、科研和创新各方面力臻完美，为社会的福祉作出更大的贡献。理大优势学科包括酒店及康乐管理，建筑，土木工程，艺术设计，环境科学，商业管理及社会学、语言学学科。理大工商管理学院是同时具有AACSB、EQUIS双重认证的商学院',
+}, {
+  logoUrl: '/contry_school/HonKong/6.png',
+  name: '香港浸会大学',
+  englishName: `Hong Kong Baptist University`,
+  location: '香港九龙塘和观塘',
+  basicInfo: '香港浸会大学是一所国际化研究型博雅大学，其前身为1956年创办的香港浸会书院，以传媒、文、理、商管、现代中医药研发著名。浸大在艺术及人文领域坚实的基础上，提供适切的教学及研究环境，推动以人为本的科技发展，同时利用科技不断开拓人类在艺术和文化的想像空间，并在科学及中医领域上不断带来突破，锐意建立一个更美好的世界及仁爱的社会。浸大传理学院于2011年荣膺“全球十大新闻学院”，截至2021年，浸大在数据库领域位列世界第11位，在人工智能领域排名靠前，世界第37位。计算机科学领域研究成果排名靠前。浸大工商管理学院从2010年获得AACSB、EQUIS和AMBA认证，成为香港首家获得三重国际顶级认证的商学院，并于2018年入选“亚洲25所顶尖商学院”',
+}, {
+  logoUrl: '/contry_school/HonKong/7.png',
+  name: '澳门大学',
+  englishName: 'niversidade de Macau ',
+  location: '澳门特别行政区凼仔大学大马路',
+  basicInfo: '澳门大学是一所位于中国澳门的公立国际化综合性研究型大学，为中欧商校联盟、“一带一路”国际科学组织联盟、粤港澳高校联盟、粤港澳大湾区西岸科技创新和人才培养合作联盟创始成员和亚太高校书院联盟成员，澳门大学工商管理学院获AACSB、AMBA和EQUIS认证。澳门大学位列2022泰晤士高等教育世界大学排名201-250区间，亚洲大学排名第33位   ，全球年轻大学排名第26位；工程学、化学、计算机科学、药理学与毒理学、材料科学、生物学与生物化学、临床医学、精神病学／心理学、社会科学总论、农业科学10个学科进入ESI前1%' 
+}, {
+  logoUrl: '/contry_school/HonKong/8.png',
+  name: '澳门科技大学',
+  englishName: 'Macau University of Science and Technology',
+  location: '澳门特别行政区氹仔岛伟龙马路',
+  basicInfo: '澳门科技大学，是一所位于中国澳门的私立国际化综合性研究型大学，为国际大学协会、亚太大学联合会 、粤港澳高校联盟 、中国高校行星科学联盟 、一流大学建设系列研讨会成员澳门科技大学位列2023泰晤士高等教育世界大学排名世界第201-250区间 ，2023QS世界大学排名世界第581-590区间  ，2022U.S. News世界大学排名世界第1002位   ，2022泰晤士高等教育亚洲大学排名第36位  、世界年轻大学排名第39位；生物学与生物化学、工程学、分子生物学与遗传学、药理毒理学、计算机科学、临床医学、社会科学（综合）共7个学科位列ESI全球前1%',
+}],
+
+'Singapore': [{
+  logoUrl: '/contry_school/Singapore/1.png',
+  name: '新加坡国立大学',
+  englishName: 'National University of Singapore',
+  location: '新加坡肯特岗、武吉知马和欧南3大校区',
+  basicInfo: '新加坡国立大学，是一所位于新加坡的公立研究型大学，在国际框架下，展开高深优质的教育与科研之际，突出展现亚洲视角和优势。学校在工程、生命科学及生物医学、社会科学及自然科学等领域，研究实力备受公认。国大立志成为一个集学者、研究员、教职员、学生和校友的活跃社群，以创新与企业精神为信念，共同打造一个更美好的世界。国大共有17所学院，提供跨学科跨院系的广泛课程，在全球超过15个城市设有海外学院和交换生计划，国大海外学院所提供的企业实习项目，与世界部分知名大学联办的联合学位及双学位计划等，为学生提供机会与挑战，发掘自我潜能。国大在科研方面也采取跨领域整合式方针，与业界、政府和学界均建立伙伴关系，研究探讨与亚洲乃至世界相关的重大且复杂的课题。国大研究工作最新焦点是，如何善用数据科学、运筹学及网络安全，为国家实现智慧国愿景提供支援。',
+}, {
+  logoUrl: '/contry_school/Singapore/2.png',
+  name: '南洋理工大学 ',
+  englishName: 'Nanyang Technological University',
+  location: '新加坡西南部',
+  basicInfo: '新加坡南洋理工大学于1991年1月正式成立，起初是一所教学型的高等学府，现已发展为一所世界型的科研密集型大学。大学拥有多个世界知名的自治学院，其中包括国立教育学院，拉惹勒南国际研究院，新加坡地球观测与研究所和新加坡环境生物工程中心，以及其他研究中心，如南洋环境与水源研究院、南洋理工大学能源研究所等。南大被“QS世界大学排名”评为世界知名大学之一，并多年蝉联全球年轻大学榜首，为工科和商科并重的综合性大学。此外生物医学、环境与水务技术、互动与数码媒体科学等都是该校的优势学科领域。南大主校区也常被列为全球美丽的校园之一',
+}, {
+  logoUrl: '/contry_school/Singapore/3.png',
+  name: '新加坡PSB学院',
+  englishName: 'PSB Academy',
+  location: '新加坡',
+  basicInfo: '新加坡PSB学院(PSB Academy)是一所历史悠久的高等院校。它是经新加坡教育部批准、受到中国驻新加坡大使馆认证的一所多功能、多学科的学院。在提供教育与企业咨询服务方面拥有超过四十年的丰富经验。前身为始建于1964年的新加坡政府贸工部属下的生产力与标准局 (Singapore Productivity and Standards Board)，这个生产力高等教育学院的成立是为了带动新加坡的人力教育工作，以及满足工商业发展对人力的需要。至今PSB学院培育的学员已超过50多万人次，每8个新加坡人中就有1个接受过PSB学院的教育和在职培训；至今培养出了众多政界要员、专业人才及企业精英，可谓桃李满天下。学院的基础大专文凭受到英国剑桥大学考试委员会的认证，可直接申请英联邦国家和美国等国著名大学本科课程。PSB学院与世界高等学府学术合作，包括澳大利亚的纽卡斯尔大学及卧龙岗大学等世界知名学府在PSB校园内开设直属分校。学生可以在新加坡PSB学院(校区)就读这些大学课程，获得等同于本校相同的大学学士以上的学位',
+}, {
+  logoUrl: '/contry_school/Singapore/4.png',
+  name: '科廷大学新加坡校区',
+  englishName: 'James Cook University Singapore Campus',
+  location: '新加坡',
+  basicInfo: '科廷大学（Curtin University）始于1900年的珀斯技术学院，距今已有一百多年的历史。它是澳大利亚西海岸规模较大的综合性大学，同时被澳大利亚高等教育质量认证委员会评为全国优质大学。科廷大学是澳大利亚较早的一所为海外特别是东南亚地区的学生提供国际性教育的大学。科廷大学现有超过40000 名在校生，来自本国及海外共105个国家，并以其充满生机与活力的学习环境而享誉全球。科廷大学是全澳具多元文化的大学之一，25% 的在校生是来自海外的国际学生',
+}, {
+  logoUrl: '/contry_school/Singapore/5.png',
+  name: '詹姆斯库克大学',
+  englishName: 'James Cook University Singapore Campus',
+  location: '新加坡',
+  basicInfo: '詹姆斯·库克大学(James Cook University，简称JCU) 原属昆士兰大学，1970年正式成立詹姆斯·库克大学。学校以18世纪英国著名的航海家和探险家詹姆斯·库克船长的名字命名。詹姆斯·库克大学是澳大利亚知名的国立研究型大学之一，是昆士兰第二古老的大学，也是英联邦高校协会(Association of Commonwealth Universities) 的会员。詹姆斯·库克大学最近在学生教育质量方面被评为5星级学校，JCU 是一家在科学研究领域享有卓著声誉的大学，2003年，詹姆斯·库克大学在新加坡建立了首个海外校区，由此成立了詹姆斯·库克大学新加坡国际校区。新加坡国际校区开设的课程与詹姆斯·库克大学主校区完全相同，在新加坡国际校区学习的学生们可以获得同样优质的教育和丰富的大学生活',
+}, {
+  logoUrl: '/contry_school/Singapore/6.png',
+  name: '新加坡管理大学 ',
+  englishName: `Singapore Management University`,
+  location: '新加坡市中心',
+  basicInfo: '新加坡管理大学，是新加坡政府于2000年设立的第三所研究密集型公立大学。是新加坡政府立足于二十一世纪的人才需求、精心打造的国际优质商科、计算机信息技术和社会科学类高等学府。其目标是开展具有主导性的学术研究并培养具备全面才能、创意和商业头脑的领导者， 藉此履行其为知识型经济创造并传播知识的使命。以开拓严谨、高成果的跨学科研究为重点的新大，通过其强大学术研究团队与国外的杰出研究工作者、以及商业和公共部门伙伴的合作，对多项能产生全球影响的亚洲课题进行深入的分析探讨',
+}],
+
+'NewZealand': [{
+  logoUrl: '/contry_school/NewZealand/1.png',
+  name: '奥克兰大学',
+  englishName: 'The University of Aukland',
+  location: '奥克兰市',
+  basicInfo: '奥克兰大学是新西兰最大的从事教学研究且拥有最多专业的综合性大学，被誉为新西兰的“国宝级”大学，享有极高的国际声誉。奥克兰大学在七个校区开设八个学术学院，开设超过160个学位和证书课程，众多专业名列OS学科专业排名前50(地理学、药剂学、运动相关学科、英语与语言文学、考古学、教育学、土木与建筑工程、心理学、护理学、建筑学、会计与金融)',
+}, {
+  logoUrl: '/contry_school/NewZealand/2.png',
+  name: '塔哥大学',
+  englishName: 'university of otago',
+  location: '奥塔哥省首府达尼丁市',
+  basicInfo: '作为新西兰历史上第一所高等学府，成立于1869年的奥塔哥大学因其研究和教学质量上的卓越国际声誉。奥塔哥大学拥有新西兰大学中唯一的牙医学院，唯一的地质测量学，以及唯一的独立植物学项目，以及拥有世界上最大的科学传播项目和大洋洲地区最成功的遗传学项目。大学的商学院在最近的国家科研成果及经费评级中获得新西兰第一。同时，奥塔哥大学的教职人员还多次获得全国性教学奖项，并目在数量上位居新西兰大学榜首',
+}, {
+  logoUrl: '/contry_school/NewZealand/3.png',
+  name: '坎特伯雷大学',
+  englishName: '',
+  location: '',
+  basicInfo: '坎特伯雷大学是新西兰八所公立大学之一，1873年由牛津大学和剑桥大学的学者建立，是新西兰历史第二悠久的大学，坎特伯重大学是一所综合排名位居全球前1%的顶 尖大学，以其享誉全球的教学和研究实力成为新西兰第一所获得QS五星认证的大学。其主校区坐落于新西兰南岛最大的城市基督城伊拉姆区，风景优美，设施一流。坎特伯重大学拥有7大学院，提供超过150门学科和120多个课程。坎特伯雷大学最近还实现了今年全球第-个可持续发展目标(SDG) 12-...负责人的消费和生产，并在《泰唔士报》高等教育全球大学影响力排名中名列第50位。',
+}, {
+  logoUrl: '/contry_school/NewZealand/4.png',
+  name: '梅西大学',
+  englishName: '',
+  location: '',
+  basicInfo: '梅西大学成立于1927年，是新西兰最大的一所教育和研究学府，也是新西兰唯一-所真正的全国性大学。主校区位于有“风车之城”美誉的北帕默斯顿，直辖真灵顿和奥克兰两大分校区，每年有超过35,000名学生就读。 同时，梅西大学飞行学院也是新西兰国内唯一提供飞行专业，争端仲裁和兽医学的大学院校。其兽医科学学士学位被美国兽医协会所承认，因此梅西大学的兽医学位不仅在新西兰国内被认可，同时也在美国，澳洲，加拿大和英国以及全世界绝大多数国家所认可及承认。这项荣誉在新西兰国内也是唯一的。',
+}, {
+  logoUrl: '/contry_school/NewZealand/5.png',
+  name: '怀卡托大学',
+  englishName: '',
+  location: '',
+  basicInfo: '怀卡托大学成立于1964年，是一所获得全球认可的高等学府，致力于为学生提供高质量的教学，培养毕业生掌握不断发展的全球就业市场所需的相应技能。主校区位于新西兰北岛城市汉密尔顿市，在陶朗市开设有分校区，每年有来自85个国家超过2.500名国际学生选择在怀卡托大学就读',
+}, {
+  logoUrl: '/contry_school/NewZealand/6.png',
+  name: '林肯大学',
+  englishName: ``,
+  location: '',
+  basicInfo: '林肯大学成立于1878年，位于新西兰南岛的中心- 基督城的郊外，拥有着58公项的绿色和宜人的公园式的校园。是南半球最早专业从事农业教学和研究的高等教育机构，是世界上最有待色的小规模大学之一，也大洋洲地区唯一提供最完整的受世界景观设计师协会认证的学历课程的高校。得益于林肯大学最优师生比例，大学极其注重培养学生实际产业知识与技能、基本的研究和数理统计能力和前暗的视野，毕业生就业率位列新西兰高校第一',
+}, {
+  logoUrl: '/contry_school/NewZealand/7.png',
+  name: '奥克兰理工大学',
+  englishName: '',
+  location: '',
+  basicInfo: '奥克兰理工大学是新西兰第二大学，也是新西兰研究生增长最 快的大学。目前，奥克兰理了大学提供超过250个专业课程，主要学科门类有:建筑学、艺术与设计、商学、法学、理学、传媒学、教育学、工程学、创意技术、健康科学、旅游和酒店管理、语言和社会科学、计算机与数理学、体育和休闲运动学等',
+}],
+
+
+}
+

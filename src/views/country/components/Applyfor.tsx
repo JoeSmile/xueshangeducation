@@ -83,7 +83,7 @@ function Applyfor({ProcessItem = DefaultProcessItem}: ApplyforProps) {
                   height='340px'
                   justifyContent='space-around'
                 >
-                  <Text fontSize='16px' fontWeight='600' textAlign='center'>{`美国${item.phase}申请条件`}</Text>
+                  <Text fontSize='16px' fontWeight='600' textAlign='center'>{`${item.phase}申请条件`}</Text>
                   <Divider marginY='10px' opacity='1' borderColor='#4E4E4E' />
                   <Box display='flex' alignItems='center'>
                     <Text color='#0D0E67' fontSize='20px'>*</Text>
