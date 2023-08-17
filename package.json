@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "startup": "pm2 start yarn --name 'xueshang' --interpreter bash -- start"
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.0.19",
