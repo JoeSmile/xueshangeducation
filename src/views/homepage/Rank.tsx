@@ -12,6 +12,7 @@ import {
 } from '@chakra-ui/react';
 import React, { useState } from 'react';
 import { top200Schools } from './top200'
+import { useFormStore } from '@/store/formStore';
 
 const RankNum = ['1-64', '66-166', '172-199']
 interface SchoolItem {
@@ -23,6 +24,7 @@ interface SchoolItem {
 function Profession() {
   const [currentNum, setCurrentNum] = useState<Number>(0)
   const [topSchoolData, setTopSchoolData] = useState<SchoolItem[]>(top200Schools.slice(0, 50))
+  const onOpen = useFormStore(s => s.onOpen);
 
   const onClickNumBtn = (index: any) => {
     setCurrentNum(index)
@@ -75,7 +77,10 @@ function Profession() {
           </Tbody>
         </Table>
       </TableContainer>
-      <Box as='button' marginTop='20px' color='#fff' borderRadius='50px' bg='#FF8A00' px={4} h={8}>更多院校排名及解析</Box>
+      <Box as='button' marginTop='20px' color='#fff' 
+         cursor='pointer'
+         onClick={() => onOpen()}
+      borderRadius='50px' bg='#FF8A00' px={4} h={8}>更多院校排名及解析</Box>
     </VStack>
   )
 }

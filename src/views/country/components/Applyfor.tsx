@@ -13,6 +13,7 @@ import {
   HStack,
 } from '@chakra-ui/react'
 import { ApplyForItem } from './data';
+import { useFormStore } from '@/store/formStore';
 
 const DefaultProcessItem: ApplyForItem = {
   title: '美国留学个阶段申请条件',
@@ -58,6 +59,8 @@ type ApplyforProps = {
 
 
 function Applyfor({ProcessItem = DefaultProcessItem}: ApplyforProps) {
+  const onOpen = useFormStore(s => s.onOpen);
+
   return (
     <VStack paddingBottom='30px'>
       <Box color='#0D0E67' fontSize='20px' fontWeight='600'  width='100%' textAlign='left' maxWidth='1200px' borderLeft='4px solid #122CBE' paddingLeft='10px'>{ProcessItem.title}</Box>
@@ -106,6 +109,8 @@ function Applyfor({ProcessItem = DefaultProcessItem}: ApplyforProps) {
                   }
                 </Box>
                 <Box
+                  cursor='pointer'
+                  onClick={() => onOpen()}
                   width='100%'
                   height='56px'
                   bg='#3d3b3a'

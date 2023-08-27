@@ -1347,6 +1347,15 @@ export const OffersCountry: OffersCountryType = {
       subject: '会计/均分：85+/PTE 66/无GRE，GMAT',
       basicInfo: '曼彻斯特大学人力资源管理硕士',
     },
+
+    {
+      logoUrl: '/contry_school/UK/8.png',
+      schoolName: '曼彻斯特大学录取',
+      name: 'H同学',
+      graduateFrom: '985院校',
+      subject: '会计/均分：83+/无GRE，GMAT',
+      basicInfo: '曼彻斯特大学人力资源管理硕士',
+    },
     {
       logoUrl: '/contry_school/UK/9.png',
       schoolName: '布里斯托大学录取',

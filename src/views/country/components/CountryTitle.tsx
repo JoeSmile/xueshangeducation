@@ -9,10 +9,11 @@ import {
 import { useRouter } from 'next/router';
 import React, { use, useEffect, useState } from 'react';
 import { Country, countryData } from '../const';
+import { useFormStore } from '@/store/formStore';
 
 function Overview() {
   const [current, setCurrent] = useState<Country>(countryData[0]);
-
+  const onOpen = useFormStore(s => s.onOpen);
   const router = useRouter();
   const onCountryChange = (e: any) => {
     router.push(e.target.value);
@@ -59,7 +60,7 @@ function Overview() {
             <Text>全面解析</Text>
             <Text>{`开启${current.name}留学之旅`}</Text>
           </Box>
-          <Box as='button' bg='#D40014' color='#fff' fontWeight='bold' px='4' h={10} w='200px'>立即咨询</Box>
+          <Box as='button' bg='#D40014' color='#fff' fontWeight='bold' px='4' h={10} w='200px' onClick={() => onOpen()}>立即咨询</Box>
         </VStack>
       </Box>
       <Box

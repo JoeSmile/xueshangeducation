@@ -1,6 +1,7 @@
 import { Card, Flex, VStack, Wrap, WrapItem, Text, Image, Box, HStack, Divider } from '@chakra-ui/react';
 import React from 'react';
 import { School } from './data';
+import { useFormStore } from '@/store/formStore';
 
 const offerList = [{
   logoUrl: '/contry_school/pu.gif',
@@ -63,6 +64,8 @@ type PopularSchoolProps = {
 }
 
 function PopularSchool({ schools = offerList }: PopularSchoolProps) {
+  const onOpen = useFormStore(s => s.onOpen);
+
   return (
     <VStack paddingBottom='30px'>
       <Box color='#0D0E67' fontSize='20px' fontWeight='600' width='100%' textAlign='left' maxWidth='1200px' borderLeft='4px solid #122CBE' paddingLeft='10px'>选校不迷茫 热门院校推荐</Box>
@@ -91,7 +94,10 @@ function PopularSchool({ schools = offerList }: PopularSchoolProps) {
                   >
                     学校简介：{item.basicInfo}
                   </Text>
-                  <Box as='button' bg='#0d9b72' color='#fff' fontSize='14px' borderRadius='15px' h={7} width='200px' margin='auto'>获取详细攻略</Box>
+                  <Box as='button' bg='#0d9b72' color='#fff' fontSize='14px' 
+                    cursor='pointer'
+                    onClick={() => onOpen()}
+                  borderRadius='15px' h={7} width='200px' margin='auto'>获取详细攻略</Box>
                 </Card>
               </WrapItem>
               )

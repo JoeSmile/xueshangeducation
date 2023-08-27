@@ -12,6 +12,7 @@ import {
   Divider,
   HStack,
 } from '@chakra-ui/react'
+import { useFormStore } from '@/store/formStore';
 
 export type ProcessItem = {
   title: string,
@@ -84,6 +85,8 @@ const DefaultProcessItem: ProcessItem[] = [{
 }, ];
 
 function Process({ProcessItems = DefaultProcessItem, title}: ProcessItemsProps) {
+  const onOpen = useFormStore(s => s.onOpen);
+
   return (
     <VStack paddingBottom='30px'>
       <Box color='#0D0E67' fontSize='20px' fontWeight='600' textAlign='left'
@@ -113,7 +116,9 @@ function Process({ProcessItems = DefaultProcessItem, title}: ProcessItemsProps) 
         </Wrap>
       </Flex>
       <Center>
-        <Box as='button' bg='transparent' borderRadius='4px' border='1px solid #FF8A00' color='#FF8A00' px={4} h={8}>了解详细服务流程</Box>
+        <Box as='button' bg='transparent' borderRadius='4px' border='1px solid #FF8A00' color='#FF8A00' px={4} h={8}
+         onClick={() => onOpen()}
+        >了解详细服务流程</Box>
       </Center>
     </VStack>
   );

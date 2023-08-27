@@ -1,7 +1,7 @@
 import { Card, Flex, VStack, Wrap, WrapItem, Text, Image, Box, HStack, Divider } from '@chakra-ui/react';
 import React from 'react';
 import { Offer } from '../country/components/data';
-
+import { useFormStore } from '@/store/formStore';
 
 const DefaultOfferList: Offer[] = [{
     logoUrl: '/contry_school/Australia/3.png',
@@ -50,6 +50,8 @@ const DefaultOfferList: Offer[] = [{
 ]
 
 function OfferExample({offerList=DefaultOfferList}: {offerList?: Offer[]}) {
+  const onOpen = useFormStore(s => s.onOpen);
+
   return (
     <VStack paddingBottom='30px'>
       <Box color='#0D0E67' fontSize='20px' fontWeight='600' textAlign='left' maxWidth='1200px' borderLeft='4px solid #122CBE' width='100%' paddingLeft='10px'>留学offer一览</Box>
@@ -90,7 +92,10 @@ function OfferExample({offerList=DefaultOfferList}: {offerList?: Offer[]}) {
           }
         </Wrap>
       </Flex>
-      <Box as='button' margin='20px' bg='transparent' borderRadius='4px' border='1px solid #FF8A00' color='#FF8A00' px={4} h={8}>了解更多</Box>
+      <Box as='button' margin='20px' bg='transparent' borderRadius='4px' 
+       cursor='pointer'
+       onClick={() => onOpen()}
+      border='1px solid #FF8A00' color='#FF8A00' px={4} h={8}>了解更多</Box>
     </VStack>
   );
 }
