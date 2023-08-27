@@ -1,4 +1,4 @@
-import { Card, Flex, VStack, Wrap, WrapItem, Text, Image, Box, HStack } from '@chakra-ui/react';
+import { Card, Flex, VStack, Wrap, WrapItem, Text, Image, Box, HStack, Divider } from '@chakra-ui/react';
 import React from 'react';
 import { School } from './data';
 
@@ -65,7 +65,8 @@ type PopularSchoolProps = {
 function PopularSchool({ schools = offerList }: PopularSchoolProps) {
   return (
     <VStack paddingBottom='30px'>
-      <Box color='#0D0E67' fontSize='20px' fontWeight='600' marginY='20px'>选校不迷茫 热门院校推荐</Box>
+      <Box color='#0D0E67' fontSize='20px' fontWeight='600' width='100%' textAlign='left' maxWidth='1200px' borderLeft='4px solid #122CBE' paddingLeft='10px'>选校不迷茫 热门院校推荐</Box>
+      <Divider borderColor='black' maxWidth='1200px'/>
       <Flex width='100%' justifyContent='center'>
         <Wrap spacing='30px' width='1200px'>
           {
@@ -75,11 +76,11 @@ function PopularSchool({ schools = offerList }: PopularSchoolProps) {
                   <HStack
                     
                   >
-                    <Image src={item.logoUrl} objectFit='cover' height='56px' borderRadius='50%' alt='icon'/>
+                    <Image src={item.logoUrl} objectFit='cover' height='56px' alt='icon'/>
                     <Box fontSize='12px'>
                       <Text fontSize='20px' color='#089b7d'>{item.name}</Text>
-                      <Text fontSize='12px' color='#999999' marginBottom='10px' noOfLines={1}>{item.englishName}</Text>
-                      <Text fontSize='14px' color='#666666' marginBottom='10px'>地理位置：{item.location}</Text>
+                      <Text fontSize='12px' color='#999999' noOfLines={1}>{item.englishName}</Text>
+                      <Text fontSize='14px' color='#666666' marginBottom='10px'>世界大学排名：{item.rank}</Text>
                     </Box>
                   </HStack>
                   <Text

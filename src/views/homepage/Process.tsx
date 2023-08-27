@@ -19,7 +19,8 @@ export type ProcessItem = {
   icon?: string
 }
 export type ProcessItemsProps = {
-  ProcessItems?: ProcessItem[]
+  ProcessItems?: ProcessItem[],
+  title?: string
 }
 
 const ProcessIcons = [
@@ -82,10 +83,12 @@ const DefaultProcessItem: ProcessItem[] = [{
   ],
 }, ];
 
-function Process({ProcessItems = DefaultProcessItem}: ProcessItemsProps) {
+function Process({ProcessItems = DefaultProcessItem, title}: ProcessItemsProps) {
   return (
     <VStack paddingBottom='30px'>
-      <Box color='#0D0E67' fontSize='20px' fontWeight='600' marginY='20px'>在学尚，体验一站式留学服务</Box>
+      <Box color='#0D0E67' fontSize='20px' fontWeight='600' textAlign='left'
+        maxWidth='1200px' borderLeft='4px solid #122CBE' paddingLeft='10px' width='100%'>{title ? title : '在学尚，体验一站式留学服务'}</Box>
+      <Divider borderColor='black' maxWidth='1200px'/>
       <Flex width='100%' justifyContent='center' marginBottom={4}>
         <Wrap align='center' justify='center' width='100%'>
           {

@@ -1,4 +1,4 @@
-import { Card, Flex, VStack, Wrap, WrapItem, Text, Image, Box, HStack } from '@chakra-ui/react';
+import { Card, Flex, VStack, Wrap, WrapItem, Text, Image, Box, HStack, Divider } from '@chakra-ui/react';
 import React from 'react';
 import { Offer } from '../country/components/data';
 
@@ -52,7 +52,8 @@ const DefaultOfferList: Offer[] = [{
 function OfferExample({offerList=DefaultOfferList}: {offerList?: Offer[]}) {
   return (
     <VStack paddingBottom='30px'>
-      <Box color='#0D0E67' fontSize='20px' fontWeight='600' marginY='20px'>在学尚，体验一站式留学服务</Box>
+      <Box color='#0D0E67' fontSize='20px' fontWeight='600' textAlign='left' maxWidth='1200px' borderLeft='4px solid #122CBE' width='100%' paddingLeft='10px'>留学offer一览</Box>
+      <Divider borderColor='black' maxWidth='1200px'/>
       <Flex width='100%' justifyContent='center'>
         <Wrap spacing='30px' width='1000px'>
           {

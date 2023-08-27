@@ -7,7 +7,7 @@ import ModuleWrapper from '@/components/moduleWrapper';
 import CountryTitle from './components/CountryTitle';
 import { usePathname } from 'next/navigation';
 import Reasons from './components/Reasons';
-import { ApplyForData, OffersCountry, ReasonsData, Schools, TimeLines } from './components/data';
+import { ApplyForData, OffersCountry, ReasonsData, Schools, TimeLines, TimesLinesGraduate, TimesLinesHighSchool, TimesLinesRegular } from './components/data';
 import Applyfor from './components/Applyfor';
 import Process from '../homepage/Process';
 import { HomePageProcessItem } from '../homepage/data';
@@ -20,7 +20,6 @@ import OfferExample from '../homepage/OfferExample';
 type countriesType = {
   [key: string]: React.ReactNode
 }
-
 export const Country = ()=> {
   const router = useRouter();
   const pathname = usePathname();
@@ -39,7 +38,7 @@ export const Country = ()=> {
           <CountryTitle />
         </ModuleWrapper>
 
-        <ModuleWrapper >
+        <ModuleWrapper mt='20px'>
           <Reasons ReasonItems={ReasonsData[country].reasons} title={ReasonsData[country].title}/>
         </ModuleWrapper>
         
@@ -52,7 +51,9 @@ export const Country = ()=> {
         </ModuleWrapper>
 
         <ModuleWrapper bg='#F5F5F5'>
-          <ApplyProblems applyItems={TimeLines[country]} country={countryName}/>
+          {TimesLinesGraduate[country] && <Process ProcessItems={TimesLinesGraduate[country].process} title={TimesLinesGraduate[country].title}/>}
+          {TimesLinesRegular[country] && <Process ProcessItems={TimesLinesRegular[country].process} title={TimesLinesRegular[country].title}/>}
+          {TimesLinesHighSchool[country] && <Process ProcessItems={TimesLinesHighSchool[country].process} title={TimesLinesHighSchool[country].title}/>}
         </ModuleWrapper>
         
         <ModuleWrapper bg='#F5F5F5'>

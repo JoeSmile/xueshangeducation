@@ -55,13 +55,14 @@ const ProcessItem = [{
 
 type ApplyProblemsProps = {
   applyItems?: TimeItem[],
-  country: string
+  country: string,
+  title?: string
 }
 
-function ApplyProblems({ applyItems = ProcessItem, country }: ApplyProblemsProps) {
+function ApplyProblems({ applyItems = ProcessItem, country, title }: ApplyProblemsProps) {
   return (
     <VStack paddingBottom='30px'>
-      <Box color='#0D0E67' fontSize='20px' fontWeight='600' marginY='20px'>{country}留学各阶段申请难点 逐一攻克</Box>
+      <Box color='#0D0E67' fontSize='20px' fontWeight='600' marginY='20px'>{title ? title : `${country}留学各阶段申请难点 逐一攻克`}</Box>
       <Flex width='100%' justifyContent='center' marginBottom={4}>
         <Wrap align='center' justify='center' width='100%'>
           {

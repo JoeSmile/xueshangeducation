@@ -60,7 +60,8 @@ type ApplyforProps = {
 function Applyfor({ProcessItem = DefaultProcessItem}: ApplyforProps) {
   return (
     <VStack paddingBottom='30px'>
-      <Box color='#0D0E67' fontSize='20px' fontWeight='600' marginY='20px'>{ProcessItem.title}</Box>
+      <Box color='#0D0E67' fontSize='20px' fontWeight='600'  width='100%' textAlign='left' maxWidth='1200px' borderLeft='4px solid #122CBE' paddingLeft='10px'>{ProcessItem.title}</Box>
+      <Divider borderColor='black' maxWidth='1200px'/>
       <Flex width='100%' justifyContent='center' marginBottom={4}>
         <Wrap align='center' justify='center' width='100%'>
           {

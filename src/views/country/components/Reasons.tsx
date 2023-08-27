@@ -70,23 +70,25 @@ type ReasonsProps = {
 function Reasons({ReasonItems = DefaultReasonItems, title='为什么赴美留学的人的人数逐年增长'}: ReasonsProps) {
   return (
     <VStack paddingBottom='30px' mb='20px' >
-      <Box color='#0D0E67' fontSize='20px' fontWeight='600' marginY='20px'>{title}</Box>
+      <Box color='#0D0E67' fontSize='20px' fontWeight='600' width='100%' textAlign='left' maxWidth='1200px' borderLeft='4px solid #122CBE' paddingLeft='10px'>{title}</Box>
+      <Divider borderColor='black' maxWidth='1200px'/>
       <Flex width='100%' justifyContent='center' marginBottom={4}>
         <Wrap align='center' justify='center' width='100%'>
           {
             ReasonItems.map((item, index) => 
               <WrapItem key={item.reason}
-                alignSelf='self-start'
+                alignSelf='stretch'
               >
                 <Box
                   display='flex'
                   flexDirection='column'
                   alignItems='center'
+                  height='100%'
                   paddingX='40px'
                   paddingY='20px'
                   borderRadius='20px'
                   justifyContent='space-around'
-                  backgroundSize='cover'
+                  backgroundSize='contain'
                   backgroundImage={`url(${ReasonIcons[index].bgImage})`}
                   backgroundPosition='center'
                   backgroundRepeat='no-repeat'
@@ -94,7 +96,9 @@ function Reasons({ReasonItems = DefaultReasonItems, title='为什么赴美留学
                   <Image src={ReasonIcons[index].icon} objectFit='cover' alt='icon'/>
                   <Text fontSize='16px' fontWeight='600' marginY='0'>{item.reason}</Text>
                   <Divider variant='dashed' marginY='10px' opacity='1' borderColor={ReasonIcons[index].dividerColor} />
-                  <Text width='200px' minH='90px' fontSize='14px'>{item.description}</Text>
+                  <Text width='200px' minH='90px' fontSize='14px'
+                    whiteSpace='pre-line'
+                  >{item.description}</Text>
                   {
                     item.btnName && <Box
                     as='button'
