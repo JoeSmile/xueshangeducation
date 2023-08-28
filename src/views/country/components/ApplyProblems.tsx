@@ -12,7 +12,6 @@ import {
   Divider,
   HStack,
 } from '@chakra-ui/react'
-import { TimeItem } from './data';
 
 const icons = [
   '/contry_problem/1.jpg',
