@@ -12,7 +12,6 @@ import Applyfor from './components/Applyfor';
 import Process from '../homepage/Process';
 import { HomePageProcessItem } from '../homepage/data';
 import { Box } from '@chakra-ui/react';
-import ApplyProblems from './components/ApplyProblems';
 import { countryData } from './const';
 import PopularSchool from './components/PopularSchool';
 import OfferExample from '../homepage/OfferExample';
