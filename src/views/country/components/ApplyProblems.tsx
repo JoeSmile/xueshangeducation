@@ -25,6 +25,8 @@ const icons = [
   '/contry_problem/2.png',
   '/contry_problem/3.jpg',
   '/contry_problem/4.jpg',
+  '/contry_problem/5.png',
+  '/contry_problem/6.jpg',
 ]
 
 const ProcessItem = [{

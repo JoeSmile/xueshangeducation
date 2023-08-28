@@ -12,42 +12,42 @@ import {
 
 
 const modeList = [{
-  type: '1+3/4',
-  inner: '1',
-  outer: '3-4',
+  type: '4+0',
+  inner: '国内4年',
+  outer: '获国外学士学位',
   discription: [
-    '适合一本线上学生',
-    '冲刺世界前50名学校',
+    '无需出国',
+    '享受国内外优质教育资源',
   ]
 }, {
-  type: '1+3/4',
-  inner: '1',
-  outer: '3-4',
+  type: '2+0',
+  inner: '国内2年',
+  outer: '获国外硕士学位',
   discription: [
-    '适合一本线上学生',
-    '冲刺世界前50名学校',
+    '无需出国',
+    '免统考',
+    '享国内外优质教育资源',
   ]
 }, {
-  type: '1+3/4',
-  inner: '1',
-  outer: '3-4',
+  type: '3+1/2',
+  inner: '国内3年+国外1-2年',
+  outer: '获国外学士/硕士',
   discription: [
-    '适合一本线上学生',
-    '冲刺世界前50名学校',
+    '国内时间长花费少',
+    '基础相对薄弱学生',
   ]
 }, {
-  type: '1+3/4',
-  inner: '1',
-  outer: '3-4',
+  type: '2+2/3',
+  inner: '国内2年+国外2-3年',
+  outer: '获国外学士学位 ',
   discription: [
-    '适合一本线上学生',
-    '冲刺世界前50名学校',
+    '转学分直录世界前200名校',
   ]
 }]
 
 function AbroadMode() {
   return (
-    <VStack>
+    <VStack padding='20px'>
       <Box
         color='#0D0E67'
         fontSize='40px'
@@ -66,11 +66,13 @@ function AbroadMode() {
               display='flex'
               flexDirection='column'
               // alignItems='center'
-              height='200px'
-              width='48%'
+              height='220px'
+              width='530px'
+              marginBottom='30px'
             >
-              <Box margin='0 auto'>
+              <VStack margin='0 auto' height='100%' width='100%' gap='0'>
                 <Box
+                  alignSelf='baseline'
                   as='span'
                   bg='#0D0E67'
                   color='#fff'
@@ -83,11 +85,13 @@ function AbroadMode() {
                   {item.type}
                 </Box>
                 <Box
-                    border='2px solid #0D0E67'
-                    padding='20px'
-                    borderRadius='10px'
-                    borderTopLeftRadius='0'
-                    boxShadow='12px 12px 0 0 rgba(0,0,0,0.1)'
+                  flex='1'
+                  width='100%'
+                  border='2px solid #0D0E67'
+                  padding='20px'
+                  borderRadius='10px'
+                  borderTopLeftRadius='0'
+                  boxShadow='12px 12px 0 0 rgba(0,0,0,0.1)'
                 >
                   <VStack
                     alignItems='unset'
@@ -119,7 +123,7 @@ function AbroadMode() {
                     }
                   </VStack>
                 </Box>
-              </Box>
+              </VStack>
             </WrapItem>
           )
         }

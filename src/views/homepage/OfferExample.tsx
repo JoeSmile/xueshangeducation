@@ -80,10 +80,10 @@ function OfferExample({offerList=DefaultOfferList}: {offerList?: Offer[]}) {
                         本科专业
                         <Box as='span' marginLeft='10px'>{item.subject}</Box>
                       </Text>
-                      <Text>
+                      {/* <Text>
                         基本背景
                         <Box as='span' marginLeft='10px'>{item.basicInfo}</Box>
-                      </Text>
+                      </Text> */}
                     </Box>
                   </VStack>
                 </Card>

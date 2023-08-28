@@ -7,70 +7,7 @@ import {
 import React from 'react';
 
 
-const SchollList = [{
-  title: '2+2留学院校推荐',
-  school: [{
-    icon: '/cooperation/22/1.png',
-    name: '上海大学',
-  }, {
-    icon: '/cooperation/22/2.png',
-    name: '北京理工大学',
-  }, {
-    icon: '/cooperation/22/3.png',
-    name: '中央财经大学',
-  }, {
-    icon: '/cooperation/22/4.png',
-    name: '集美大学',
-  }, {
-    icon: '/cooperation/22/5.png',
-    name: '吉林大学',
-  }, {
-    icon: '/cooperation/22/6.png',
-    name: '武汉理工大学',
-  }]
-}, {
-  title: '3+1留学院校推荐',
-  school: [{
-    icon: '/cooperation/31/1.png',
-    name: '北京理工大学',
-  }, {
-    icon: '/cooperation/31/2.png',
-    name: '上海外国语大学',
-  }, {
-    icon: '/cooperation/31/3.png',
-    name: '暨南大学',
-  }, {
-    icon: '/cooperation/31/4.png',
-    name: '中央财经大学',
-  }, {
-    icon: '/cooperation/31/5.png',
-    name: '济南大学',
-  }, {
-    icon: '/cooperation/31/6.png',
-    name: '广东财经大学',
-  }]
-}, {
-  title: '2+0留学院校推荐',
-  school: [{
-    icon: '/cooperation/20/1.png',
-    name: '对外经贸大学',
-  }, {
-    icon: '/cooperation/20/2.png',
-    name: '北京邮电大学',
-  }, {
-    icon: '/cooperation/20/3.png',
-    name: '上海财经大学',
-  }, {
-    icon: '/cooperation/20/4.png',
-    name: '上海交通大学',
-  }, {
-    icon: '/cooperation/20/5.png',
-    name: '北京科技大学',
-  }, {
-    icon: '/cooperation/20/6.png',
-    name: '中国传媒大学',
-  }]
-}, {
+const SchollList = [ {
   title: '4+0留学院校推荐',
   school: [{
     icon: '/cooperation/40/1.png',
@@ -91,7 +28,70 @@ const SchollList = [{
     icon: '/cooperation/40/6.png',
     name: '上海财经大学',
   }]
-}]
+},  {
+  title: '2+0留学院校推荐',
+  school: [{
+    icon: '/cooperation/20/1.png',
+    name: '对外经贸大学',
+  }, {
+    icon: '/cooperation/20/2.png',
+    name: '北京邮电大学',
+  }, {
+    icon: '/cooperation/20/3.png',
+    name: '上海财经大学',
+  }, {
+    icon: '/cooperation/20/4.png',
+    name: '上海交通大学',
+  }, {
+    icon: '/cooperation/20/5.png',
+    name: '北京科技大学',
+  }, {
+    icon: '/cooperation/20/6.png',
+    name: '中国传媒大学',
+  }]
+},{
+  title: '3+1留学院校推荐',
+  school: [{
+    icon: '/cooperation/31/1.png',
+    name: '北京理工大学',
+  }, {
+    icon: '/cooperation/31/2.png',
+    name: '上海外国语大学',
+  }, {
+    icon: '/cooperation/31/3.png',
+    name: '暨南大学',
+  }, {
+    icon: '/cooperation/31/4.png',
+    name: '中央财经大学',
+  }, {
+    icon: '/cooperation/31/5.png',
+    name: '济南大学',
+  }, {
+    icon: '/cooperation/31/6.png',
+    name: '广东财经大学',
+  }]
+},{
+  title: '2+2留学院校推荐',
+  school: [{
+    icon: '/cooperation/22/1.png',
+    name: '上海大学',
+  }, {
+    icon: '/cooperation/22/2.png',
+    name: '北京理工大学',
+  }, {
+    icon: '/cooperation/22/3.png',
+    name: '中央财经大学',
+  }, {
+    icon: '/cooperation/22/4.png',
+    name: '集美大学',
+  }, {
+    icon: '/cooperation/22/5.png',
+    name: '吉林大学',
+  }, {
+    icon: '/cooperation/22/6.png',
+    name: '武汉理工大学',
+  }]
+}, ]
 
 function SchoolRecommend() {
   return (

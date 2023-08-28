@@ -32,6 +32,12 @@ const ProcessIcons = [
   '/contry_problem/4.jpg',
   '/contry_problem/5.png',
   '/contry_problem/6.jpg',
+  '/contry_problem/1.jpg',
+  '/contry_problem/2.png',
+  '/contry_problem/3.jpg',
+  '/contry_problem/4.jpg',
+  '/contry_problem/5.png',
+  '/contry_problem/6.jpg',
 ]
 const DefaultProcessItem: ProcessItem[] = [{
   title: '前期咨询',

@@ -30,7 +30,7 @@ export const Homepage = ()=> {
        <Process ProcessItems={HomePageProcessItem}/>
       </ModuleWrapper>
 
-      <ModuleWrapper bg='white'>
+      <ModuleWrapper bg='white' maxW='1200px' margin='0 auto'>
         <Profession />
       </ModuleWrapper>
 
