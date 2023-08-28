@@ -9,6 +9,7 @@ import OfferExample from '../../views/homepage/OfferExample';
 import Rank from '../../views/homepage/Rank';
 import Consult from '../../views/homepage/Consult'
 import ImageSwiper from '@/components/imageSwiper';
+import Seo from '@/components/SEO';
 
 const images = [{
   src: '/homepage/swiper/1.jpg'
@@ -19,6 +20,8 @@ const images = [{
 export const Cooperation = ()=> {
   return (
     <Layout>
+      <Seo/>
+
       <ImageSwiper images={images}/>
 
 

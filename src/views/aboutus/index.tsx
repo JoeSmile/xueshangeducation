@@ -3,10 +3,12 @@ import { Box, Center, Image, Text, VStack } from '@chakra-ui/react';
 import React from 'react';
 import { Gallery } from 'react-grid-gallery';
 import images from './image';
+import Seo from '@/components/SEO';
 
 export const Aboutus =()=> {
   return (
     <Layout flex={1}>
+      <Seo/>
       <VStack flex={1}>
         <Box display='block' textIndent='20px' maxW='800px' m='20px auto' flex={1}>
           <Image src='/logo.png' objectFit='contain' alt='aboutus' 

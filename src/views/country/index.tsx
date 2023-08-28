@@ -15,6 +15,7 @@ import { Box } from '@chakra-ui/react';
 import { countryData } from './const';
 import PopularSchool from './components/PopularSchool';
 import OfferExample from '../homepage/OfferExample';
+import Seo from '@/components/SEO';
 
 type countriesType = {
   [key: string]: React.ReactNode
@@ -32,6 +33,8 @@ export const Country = ()=> {
 
   return (
     <Layout>
+      <Seo/>
+
       <CountryLayout>
         <ModuleWrapper bg='white' maxWidth='1200px' margin='0 auto'>
           <CountryTitle />

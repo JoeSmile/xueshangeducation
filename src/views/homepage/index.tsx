@@ -9,6 +9,7 @@ import OfferExample from './OfferExample';
 import Rank from './Rank';
 import Consult from './Consult'
 import { HomePageProcessItem} from './data';
+import Seo from '@/components/SEO';
 
 const images = [{
   src: '/homepage/swiper/1.jpg'
@@ -20,6 +21,8 @@ const images = [{
 export const Homepage = ()=> {
   return (
     <Layout>
+      <Seo/>
+
       <ImageSwiper images={images}/>
 
       <ModuleWrapper bg='white'>
