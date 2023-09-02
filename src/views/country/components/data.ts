@@ -532,48 +532,50 @@ export const TimesLinesGraduate: TimeLines = {
     {
       title: '5—7月',
       description: [
-        '提升绩点准备语言成绩',
-        '了解英国大学基本概况',
-        '确定申请院校和专业',
+        '提升绩点准备语言',
+        '了解英国大学概况',
+        '确定申请院校专业',
       ],
     },{
       title: '7—9月',
       description: [
-        '高效提升自我竞争力',
-        '参加实习/科研丰富背景',
-        '艺术类提前准备作品集',
+        '提升自我竞争力',
+        '实习/科研丰富背景',
+        '艺术类准备作品集',
       ],
     },{
       title: '10月前',
       description: [
-        '申请材料准备包括成绩单',
-        '推荐信、个人陈述（PS）',
-        '简历和语言成绩',
+        '申请材料准备',
+        '成绩单、RL、PS',
+        'CV和语言成绩',
       ],
     },{
       title: '9—12月',
       description: [
         '集齐所有申请材料',
-        '就可以开始网申递交',
+        '开始网申递交',
       ],
     },{
       title: '次年1—3月',
       description: [
-        '等待offer及时关注大学邮件',
-        '如有面试邀请做好面试准备',
+        '等待offer关注邮件',
+        '如有面试邀请',
+        '做好面试准备',
       ],
     },{
       title: '次年4—6月',
       description: [
-        '查看offer的Deadline、押金要求等',
-        '着手申请奖学金和预定宿舍',
+        '查看offer的Deadline',
+        '及押金要求等',
+        '申请奖学金和预定宿舍',
       ],
     },{
       title: '次年7—9月',
       description: [
-        '拿到毕业证和最终成绩',
-        '拿到大学的unconditional offer',
-        '向学校换取CAS办理签证',
+        '拿到毕业证及最终成绩',
+        '拿到大学无条件 offer',
+        '换取CAS办理签证',
       ],
     }
   ]},
@@ -614,16 +616,11 @@ export const TimesLinesGraduate: TimeLines = {
     title: '留学各阶段申请难点 逐一攻克',
     process: [
     {
-      title: '1~2月',
-      description: [
-        '确定申请方向',
-      ],
-    },{
       title: '2~3月',
       description: [
         '制定申请计划',
         '制定时间规划',
-        '明确各环节时间节点',
+        '明确各环节节点',
       ],
     },{
       title: '2~6月',
@@ -646,26 +643,28 @@ export const TimesLinesGraduate: TimeLines = {
         '完成申请费缴纳'
       ],
     },{
-      title: '次年 1~3月',
+      title: '次年1~3月',
       description: [
         '根据所选院校要求',
         '针对性的准备面试'
       ],
     },{
-      title: '次年 3~4月',
+      title: '次年3~4月',
       description: [
-        '选择和确定 offer',
+        '选择和确定offer',
         '准备纸质文件寄送至学校',
         '缴纳留位费',
       ],
     },{
       title: '次年5~8月',
       description: [
-        '留学准备及行前准备',
+        '留学准备',
+        '行前准备'
       ],
     }
   ]}
 };
+
 export const TimesLinesRegular: TimeLines = { 
   'Canada': {
     title: '加拿大本科留学各阶段申请难点 逐一攻克',
@@ -701,9 +700,9 @@ export const TimesLinesRegular: TimeLines = {
     },{
       title: '高三下',
       description: [
+        '补交学术成绩',
+        '等待&确认录取',
         '准备签证材料',
-        '递交签证',
-        '签证获批，准备入境',
       ],
     }
   ]},
@@ -715,15 +714,15 @@ export const TimesLinesRegular: TimeLines = {
       description: [
         '初步确定留学意向',
         '语言学习计划',
-        '课外活动及竞赛参加计划',
+        '课外活动及竞赛参加',
       ],
     },
     {
       title: '高一',
       description: [
         '校内学术成绩',
-        '参加专业活动和竞赛考试',
-        '初步确定院校和专业',
+        '参加专业活动和竞赛',
+        '初定院校和专业',
       ],
     }, {
       title: '高一暑假',
@@ -778,15 +777,16 @@ export const TimesLinesHighSchool: TimeLines = {
     },{
       title: '后年3-7月',
       description: [
-        '准备及整理签证材料',
-        '提交签证申请、录指纹',
-        '拿到签证并安排接机住宿',
+        '准备签证材料',
+        '提交签证、录指纹',
+        '拿到签证并接机住宿',
       ],
     },{
       title: '后年7-8月',
       description: [
         '行前指导',
-        '离境，入学报道',
+        '离境',
+        '入学报道'
       ],
     }
   ]},
@@ -1280,6 +1280,13 @@ export const Schools:SchoolsType = {
   location: '486',
   basicInfo: '奥克兰理工大学是新西兰第二大学，也是新西兰研究生增长最 快的大学。目前，奥克兰理了大学提供超过250个专业课程，主要学科门类有:建筑学、艺术与设计、商学、法学、理学、传媒学、教育学、工程学、创意技术、健康科学、旅游和酒店管理、语言和社会科学、计算机与数理学、体育和休闲运动学等',
   rank: '486'
+}, {
+  logoUrl: '/contry_school/NewZealand/9.png',
+  name: '怀卡托理工学院',
+  englishName: 'Waikato Institute of Technology',
+  location: '--',
+  basicInfo: '怀卡托理工学院（Waikato Institute of Technology）成立于1912年，是新西兰主要的公立高等教育院校之一，位于新西兰北岛中部汉密尔顿市中心。作为新西兰最大的理工学院之一，怀卡托理工学院有27,000名全职和兼职学生在读',
+  rank: '--'
 }],
 }
 
@@ -1611,61 +1618,74 @@ export const OffersCountry: OffersCountryType = {
       schoolName: '新加坡国立大学录取',
       name: 'T同学',
       graduateFrom: '985院校',
-      subject: '均分：84+/雅思 7',
+      subject: '均分：84+/雅思 6.5',
+    },{
+      logoUrl: '/contry_school/Singapore/1.png',
+      schoolName: '新加坡国立大学录取',
+      name: 'L同学',
+      graduateFrom: '211院校',
+      subject: '均分：85+/雅思 6.5',
+    },
+    {
+      logoUrl: '/contry_school/Singapore/1.png',
+      schoolName: '新加坡国立大学录取',
+      name: 'A同学',
+      graduateFrom: '985院校',
+      subject: '均分：82+/雅思 7',
     },
   ],
   "NewZealand": [
     {
-      logoUrl: '/contry_school/NewZealand/4.png',
+      logoUrl: '/contry_school/NewZealand/5.png',
       schoolName: '梅西大学录取',
       name: 'S同学',
       graduateFrom: '昌吉学院',
       subject: '英语/均分79.5/雅思6',
     },
     {
-      logoUrl: '/contry_school/NewZealand/2.png',
+      logoUrl: '/contry_school/NewZealand/1.png',
       schoolName: '奥克兰大学大学录取',
       name: 'C同学',
       graduateFrom: '双非院校',
       subject: '书法专业/GPA: 87/无雅思',
     },
     {
-      logoUrl: '/contry_school/NewZealand/2.png',
+      logoUrl: '/contry_school/NewZealand/1.png',
       schoolName: '奥克兰大学大学录取',
       name: 'B同学',
       graduateFrom: '独立学院',
       subject: '播音主持 书法专业/GPA: 83',
     },
     {
-      logoUrl: '/contry_school/NewZealand/4.png',
+      logoUrl: '/contry_school/NewZealand/5.png',
       schoolName: '梅西大学录取',
       name: 'A同学',
       graduateFrom: '集美大学',
       subject: '商务专业/均分70/雅思6',
     },
     {
-      logoUrl: '/contry_school/NewZealand/4.png',
+      logoUrl: '/contry_school/NewZealand/5.png',
       schoolName: '梅西大学录取',
       name: 'K同学',
       graduateFrom: '河北师范大学',
       subject: '商务专业/均分81.47/雅思6分',
     },
     {
-      logoUrl: '/contry_school/NewZealand/4.png',
+      logoUrl: '/contry_school/NewZealand/5.png',
       schoolName: '梅西大学录取',
       name: 'N同学',
       graduateFrom: '青岛农业大学',
       subject: '商务专业/GPA81.45/雅思6',
     },
     {
-      logoUrl: '/contry_school/NewZealand/4.png',
+      logoUrl: '/contry_school/NewZealand/5.png',
       schoolName: '梅西大学录取',
       name: 'M同学',
       graduateFrom: '东北大学',
       subject: '金融学专业/GPA:3.43/雅思6',
     },
     {
-      logoUrl: '/contry_school/NewZealand/6.png',
+      logoUrl: '/contry_school/NewZealand/8.png',
       schoolName: '奥克兰理工大学录取',
       name: 'K同学',
       graduateFrom: '内蒙古科技大学',
