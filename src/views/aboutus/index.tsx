@@ -7,10 +7,10 @@ import Seo from '@/components/SEO';
 
 export const Aboutus =()=> {
   return (
-    <Layout flex={1}>
+    <Layout flex={1} background='white'>
       <Seo/>
-      <VStack flex={1}>
-        <Box display='block' textIndent='20px' maxW='800px' m='20px auto' flex={1}>
+      <VStack flex={1} background='white'>
+        <Box display='block' textIndent='20px' maxW='800px' m='20px auto' flex={1} background='white'>
           <Image src='/logo.png' objectFit='contain' alt='aboutus' 
             display='inline-block' height='300px' width='300px' mr='20px' />
         </Box>

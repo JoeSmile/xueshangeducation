@@ -71,10 +71,10 @@ function PopularSchool({ schools = offerList }: PopularSchoolProps) {
       <Box color='#0D0E67' fontSize='20px' fontWeight='600' width='100%' textAlign='left' maxWidth='1200px' borderLeft='4px solid #122CBE' paddingLeft='10px'>选校不迷茫 热门院校推荐</Box>
       <Divider borderColor='black' maxWidth='1200px'/>
       <Flex width='100%' justifyContent='center'>
-        <Wrap spacing='30px' width='1200px'>
+        <Wrap spacing='30px' width='1200px' justify='space-between' className='school-wrap'>
           {
             schools.map(item => 
-              <WrapItem key={item.name} width='30%' height='230px' alignItems='unset'>
+              <WrapItem key={item.name} width='31%' height='230px' alignItems='unset'>
                 <Card width='100%' paddingX='30px' paddingY='10px' borderRadius='20px'>
                   <HStack
                     

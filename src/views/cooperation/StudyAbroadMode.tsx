@@ -57,7 +57,7 @@ function AbroadMode() {
       </Box>
       <Wrap
         width='1100px'
-        justifyContent='center'
+        justify='space-between'
       >
         {
           modeList.map((item, index) => 
@@ -92,6 +92,7 @@ function AbroadMode() {
                   borderRadius='10px'
                   borderTopLeftRadius='0'
                   boxShadow='12px 12px 0 0 rgba(0,0,0,0.1)'
+                  fontSize='18px'
                 >
                   <VStack
                     alignItems='unset'
@@ -115,7 +116,7 @@ function AbroadMode() {
                     <Divider bg='#0D0E67' variant='dashed' />
                     {
                       item.discription.map((i, discriptionIndex) => (
-                        <Box fontSize='12px' key={discriptionIndex} marginBottom='5px' display='flex' alignItems='center' color='#18006C'>
+                        <Box fontSize='16px' key={discriptionIndex} marginBottom='5px' display='flex' alignItems='center' color='#18006C'>
                         <Box bg='#18006C' h='5px' w='5px' display='inline-block' marginRight='5px' borderRadius='50%' />
                           {i}
                         </Box>

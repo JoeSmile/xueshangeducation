@@ -41,10 +41,10 @@ function Countries() {
   return (
     <VStack paddingBottom='30px'>
       <Center>
-        <Text color='#0D0E67' fontSize='48px' fontWeight='600'>留学大咖的进阶之路</Text>
+        <Text color='#0D0E67' fontSize='48px' fontWeight='600'>国家篇</Text>
       </Center>
       <Center marginY='10px'>
-        <Text color='#0D0E67' fontSize='48px' fontWeight='600'>国家篇</Text>
+        <Text color='#0D0E67' fontSize='20px' fontWeight='600'>留学大咖的进阶之路</Text>
       </Center>
       <Flex justifyContent='center'>
         <Wrap maxW='1200px' width='100%' spacing={10} justifyContent='center'>

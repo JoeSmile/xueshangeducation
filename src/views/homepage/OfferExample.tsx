@@ -57,10 +57,10 @@ function OfferExample({offerList=DefaultOfferList}: {offerList?: Offer[]}) {
       <Box color='#0D0E67' fontSize='20px' fontWeight='600' textAlign='left' maxWidth='1200px' borderLeft='4px solid #122CBE' width='100%' paddingLeft='10px'>留学offer一览</Box>
       <Divider borderColor='black' maxWidth='1200px'/>
       <Flex width='100%' justifyContent='center'>
-        <Wrap spacing='30px' width='1000px'>
+        <Wrap spacing='30px' width='1200px' justify='space-between'>
           {
             offerList.map((item,index) => 
-              <WrapItem key={index} width='300px' height='175px' alignItems='unset'>
+              <WrapItem key={index} width='270px' height='175px' alignItems='unset'>
                 <Card width='300px' height='175px'>
                   <VStack bg='#fff' padding='20px' height='100%' width='100%'>
                     <HStack width='100%'>
