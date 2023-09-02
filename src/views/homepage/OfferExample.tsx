@@ -39,14 +39,24 @@ const DefaultOfferList: Offer[] = [{
     subject: '会计/均分：85+/PTE 66/无GRE，GMAT',
     basicInfo: '曼彻斯特大学人力资源管理硕士',
   }, {
-    logoUrl: '/contry_school/UK/4.png',
-    schoolName: '英国G5伦敦政治经济学院录取',
-    name: 'J同学',
+    logoUrl: '/contry_school/USA/1_.png',
+    schoolName: '美国顶级名校约翰霍普金斯大学录取',
+    name: 'C同学',
+    graduateFrom: '211院校',
+    subject: '经济学专业/均分：85+/托福100+/GRE:320+',
+  }, {
+    logoUrl: '/contry_school/USA/2_.png',
+    schoolName: '南加州大学录取',
+    name: 'S同学',
     graduateFrom: '985院校',
-    subject: '经济学/均分：87/雅思 7/无GRE，GMAT',
-    basicInfo: '伦敦政治经济学院经济史硕士',
-  },
-
+    subject: '经济学专业/均分：87/托福105/GRE:320+',
+  }, {
+    logoUrl: '/contry_school/USA/3_.png',
+    schoolName: '明尼苏达大学录取',
+    name: 'K同学',
+    graduateFrom: '双非一本',
+    subject: '工业工程专业/均分85+',
+  }
 ]
 
 function OfferExample({offerList=DefaultOfferList}: {offerList?: Offer[]}) {
