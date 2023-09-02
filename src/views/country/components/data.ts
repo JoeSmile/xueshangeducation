@@ -249,9 +249,18 @@ export const ApplyForData: ApplyForDataType ={
   }, 'HonKong': {
     title: '港澳留学个阶段申请条件',
     applyItems: [{
+      phase: '香港本科',
+      academic: [
+        '自主独立招生独立于内地高校的录取程序，可以和内地高考志愿同步进行，不影响内地高考的录取。在录取过程中，学校会综合考察申请者的整体素质，包括高考总成绩及英语成绩、面试表现、综合学术及非学术素质等',
+      ],
+      language: [
+        '国际课程学生则需提供雅思成绩，国际课程考试成绩(Alevel, SAT，IB等）,以及其他软性背景申请',
+      ],
+      bottomWord: '港澳本科申请条件',
+    }, {
       phase: '香港硕士',
       academic: [
-        '香港各个院校或专业的申请条件都有所不同，通常要求获得目标院校认可的学士学位或同等学历，部分课程要求荣誉学士学位或研究学学位。大部分课程都要求专业对口，比如工科、理科、金融、护理等领域，部分文科专业如翻译、教育、传媒等无专业背景要求',
+        '通常要求获得目标院校认可的学士学位或同等学历，部分课程要求荣誉学士学位。大部分课程都要求专业对口，比如工科、理科、金融、护理等领域，部分文科专业如翻译、教育、传媒等无专业背景要求',
       ],
       language: [
         '香港“八大院校”要求雅思总分达到6.0-6.5分，且单项不低于5.5分；托福pBT达到550分；托福iBT要求为79分或80分',
@@ -260,7 +269,7 @@ export const ApplyForData: ApplyForDataType ={
     }, {
       phase: '澳门硕士',
       academic: [
-        '门不同院校和专业的申请要求会有差异，通常要求获得目标院校认可的学士学位或同等学历，申请工商管理要求有2年及以上的工作经验。往届生可申请公共行政硕士或工商管理硕士，申请其他专业的要参加内地组织的研究生入学考试，应届生申请则不需要参加研究生入学考试。本科期间的成绩必须在80分以上',
+        '通常要求获得目标院校认可的学士学位或同等学历，申请工商管理要求有2年及以上的工作经验。往届生可申请公共行政硕士或工商管理硕士，申请其他专业的要参加内地组织的研究生入学考试，应届生申请则不需要参加研究生入学考试。本科期间的成绩必须在80分以上',
       ],
       language: [
         '雅思总分6.0及以上；托福iBT要求80分及以上；提供英语六级成绩的要求总分430以上',
@@ -1664,4 +1673,55 @@ export const OffersCountry: OffersCountryType = {
     },
    
   ],
+  "cooperation":[
+    {
+      logoUrl: '/contry_school/cooperation/1.png',
+      schoolName: '天津财经大学-加拿大西三一录取',
+      name: 'D同学',
+      graduateFrom: '国内双非本科院校',
+      subject: '新闻学 国际MBA',
+    }, {
+      logoUrl: '/contry_school/cooperation/2.png',
+      schoolName: '上海财经大学-美国韦伯斯特大学录取',
+      name: 'M同学',
+      graduateFrom: '国内双非本科院校',
+      subject: '计算机应用软件 IMBA',
+    },{
+      logoUrl: '/contry_school/cooperation/3.png',
+      schoolName: '北京邮电大学-法国里昂商学院录取',
+      name: 'X同学',
+      graduateFrom: '国内双非本科院校',
+      subject: '土木工程 EMBA',
+    },{
+      logoUrl: '/contry_school/cooperation/4.png',
+      schoolName: '中国传媒大学-英国诺丁汉特伦特大学录取',
+      name: 'C同学',
+      graduateFrom: '国内双非本科院校',
+      subject: '英语 新闻与传播',
+    },{
+      logoUrl: '/contry_school/cooperation/5.png',
+      schoolName: '北京科技大学-美国德克萨斯大学阿灵顿商学院录取',
+      name: 'C同学',
+      graduateFrom: '国内双非本科院校',
+      subject: '广播电视新闻学 EMBA',
+    },{
+      logoUrl: '/contry_school/cooperation/6.png',
+      schoolName: '香港大学录取',
+      name: 'L同学',
+      graduateFrom: '国内双非本科院校',
+      subject: '计算机科学与技术 EMBA',
+    },{
+      logoUrl: '/contry_school/cooperation/7.png',
+      schoolName: '中国社科院大学-美国杜兰大学录取',
+      name: 'L同学',
+      graduateFrom: '国内双非本科院校',
+      subject: '劳动与社会保障 金融管理',
+    },{
+      logoUrl: '/contry_school/cooperation/8.png',
+      schoolName: '天津师范大学-韩国世韩大学录取',
+      name: 'D同学',
+      graduateFrom: '国内双非本科院校',
+      subject: '工程管理 教育行政学',
+    },
+  ]
 }

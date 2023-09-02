@@ -10,6 +10,7 @@ import Rank from '../../views/homepage/Rank';
 import Consult from '../../views/homepage/Consult'
 import ImageSwiper from '@/components/imageSwiper';
 import Seo from '@/components/SEO';
+import { OffersCountry } from '../country/components/data';
 
 const images = [{
   src: '/homepage/swiper/1.jpg'
@@ -24,7 +25,6 @@ export const Cooperation = ()=> {
 
       <ImageSwiper images={images}/>
 
-
       <ModuleWrapper bg='white'>
         <AbroadMode />
       </ModuleWrapper>
@@ -36,9 +36,9 @@ export const Cooperation = ()=> {
       <ModuleWrapper bg='#F5F5F5'>
        <Process />
       </ModuleWrapper>
-
+      
       <ModuleWrapper bg='#F5F5F5'>
-        <OfferExample/>
+        <OfferExample offerList={OffersCountry['cooperation']}/>
       </ModuleWrapper>
 
       <ModuleWrapper bg='white'>
