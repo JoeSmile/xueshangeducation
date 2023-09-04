@@ -6,7 +6,7 @@ function LogoArea() {
     <HStack justifyContent='space-between' width='100%' px='120px' background='white'>
       <HStack background='white'>
         <Image src="/logo.png" objectFit='cover' height='120px' alt='logo'/>
-        <Text fontSize='48px' color='#0029BF' fontFamily='monospace'>
+        <Text fontSize='32px' color='#0029BF' fontFamily='monospace'>
           出国教育的灯塔 回国就业的桥梁
         </Text>
       </HStack>
