@@ -13,19 +13,19 @@ const products = [{
 },{
   title: '加拿大',
   imageUrl: '/homepage/country/3.jpg',
-  description: '加拿大签证真的很难办吗？'
+  description: '加拿大签证真的很难办吗?'
 }, {
   title: '欧洲',
   imageUrl: '/homepage/country/4.jpg',
-  description: '欧洲国家可以免学费吗？'
+  description: '欧洲国家可以免学费吗?'
 },{
   title: '英国',
   imageUrl: '/homepage/country/5.jpg',
-  description: '英国院校排名知多少？'
+  description: '英国院校排名知多少?'
 },{
   title: '亚洲',
   imageUrl: '/homepage/country/6.jpg',
-  description: '香港八大成人大陆高考成绩吗？'
+  description: '亚洲国家留学可以免语言吗?'
 },{
   title: '港澳',
   imageUrl: '/homepage/country/7.jpg',
@@ -33,7 +33,7 @@ const products = [{
 },{
   title: '中外合办',
   imageUrl: '/homepage/country/8.jpg',
-  description: '中外合办值得上吗？'
+  description: '中外合办值得上吗?'
 }]
 
 
@@ -41,10 +41,10 @@ function Countries() {
   return (
     <VStack paddingBottom='30px'>
       <Center>
-        <Text color='#0D0E67' fontSize='48px' fontWeight='600'>国家篇</Text>
+        <Text color='#0D0E67' fontSize='48px' fontWeight='600'>目的地篇</Text>
       </Center>
       <Center marginY='10px'>
-        <Text color='#0D0E67' fontSize='20px' fontWeight='600'>留学大咖的进阶之路</Text>
+        <Text color='#0D0E67' fontSize='24px' fontWeight='600'>留学大咖的进阶之路</Text>
       </Center>
       <Flex justifyContent='center'>
         <Wrap maxW='1200px' width='100%' spacing={10} justifyContent='center'>
