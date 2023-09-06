@@ -1,5 +1,6 @@
 import { Card, Flex, VStack, Wrap, WrapItem, Text, Center, HStack, Box } from '@chakra-ui/react';
 import React from 'react';
+import { useFormStore } from '@/store/formStore';
 
 const subjectList = [{
   subject:'会计与金融学',
@@ -36,6 +37,8 @@ const commonProblem = [
 ]
 
 function Profession() {
+  const onOpen = useFormStore(s => s.onOpen);
+
   return (
     <VStack paddingBottom='30px'>
       <Center marginY='10px'>
@@ -79,7 +82,7 @@ function Profession() {
                 )
               }
             </Box>
-            <Box as='button' bg='#FF8A00' borderRadius='50px' color='#fff' px='4px' h='8' w='200px'>更多热门专业解析</Box>
+            <Box as='button' bg='#FF8A00' borderRadius='50px' color='#fff' px='4px' h='8' w='200px'   onClick={() => onOpen()}>更多热门专业解析</Box>
           </VStack>
         </HStack>
       </Flex>

@@ -77,14 +77,15 @@ function PopularSchool({ schools = offerList }: PopularSchoolProps) {
             schools.map(item => 
               <WrapItem key={item.name} width='31%' height='230px' alignItems='unset'>
                 <Card width='100%' paddingX='30px' paddingY='10px' borderRadius='20px'>
-                  <HStack
-                    
-                  >
-                    <Image src={item.logoUrl}    
-                      style={{
-                        objectFit: 'cover', // cover, contain, none
-                      }} height={56} alt='icon'
-                    />
+                  <HStack>
+                    <Box width='50px' height='50px' position='relative'>
+                      <Image src={item.logoUrl}    
+                        style={{
+                          objectFit: 'contain', // cover, contain, none
+                        }} fill alt='icon'
+                      />
+                    </Box>
+                   
                     <Box fontSize='12px'>
                       <Text fontSize='20px' color='#089b7d'>{item.name}</Text>
                       <Text fontSize='12px' color='#999999' noOfLines={1}>{item.englishName}</Text>

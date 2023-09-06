@@ -87,7 +87,7 @@ function HongkongSchool() {
                   <Image src={item.logoUrl}    
                     style={{
                       objectFit: 'cover', // cover, contain, none
-                    }} height={68} alt='icon'
+                    }} height={68} width={100} alt='icon'
                   />
                   <Box fontSize='12px'>
                     <Text fontSize='18px' color='#666666' fontWeight='bold'>{item.name}</Text>

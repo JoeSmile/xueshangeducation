@@ -92,7 +92,10 @@ function Reasons({ReasonItems = DefaultReasonItems, title='为什么赴美留学
                   backgroundPosition='center'
                   backgroundRepeat='no-repeat'
                 >
-                  <Image src={ReasonIcons[index].icon}     style={{
+                  <Image src={ReasonIcons[index].icon} 
+                    height={55}
+                    width={55}
+                    style={{
                       objectFit: 'cover', // cover, contain, none
                     }} alt='icon'/>
                   <Text fontSize='16px' fontWeight='600' marginY='0'>{item.reason}</Text>

@@ -1,7 +1,8 @@
-import { Card, Flex, VStack, Wrap, WrapItem, Text, Image, Box, HStack, Divider } from '@chakra-ui/react';
+import { Card, Flex, VStack, Wrap, WrapItem, Text, Box, HStack, Divider } from '@chakra-ui/react';
 import React from 'react';
 import { Offer } from '../country/components/data';
 import { useFormStore } from '@/store/formStore';
+import Image from 'next/image';
 
 const DefaultOfferList: Offer[] = [{
     logoUrl: '/contry_school/Australia/3.png',
@@ -74,7 +75,9 @@ function OfferExample({offerList=DefaultOfferList}: {offerList?: Offer[]}) {
                 <Card width='300px' height='175px'>
                   <VStack bg='#fff' padding='20px' height='100%' width='100%'>
                     <HStack width='100%'>
-                      <Image src={item.logoUrl} objectFit='cover' height='36px' alt='icon'/>
+                      <Image src={item.logoUrl} style={{
+                        objectFit: 'cover', // cover, contain, none
+                      }} height={36} width={36} alt='icon'/>
                       <Text fontWeight='600'>{item.schoolName}</Text>
                     </HStack>
                     <Box fontSize='12px' width='100%'>

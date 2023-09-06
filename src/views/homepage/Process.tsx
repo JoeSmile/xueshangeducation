@@ -105,7 +105,7 @@ function Process({ProcessItems = DefaultProcessItem, title}: ProcessItemsProps) 
               <WrapItem key={item.title}>
                 <HStack>
                   <VStack borderRadius='150px' alignItems='center' bg='#fff' paddingX='20px' paddingY='50px'>
-                    <Image src={ProcessIcons[processIndex]}   style={{
+                    <Image src={ProcessIcons[processIndex]} style={{
                         objectFit: 'cover', // cover, contain, none
                       }} height={56} width={56} alt='icon'/>
                     <Text fontSize='24px' fontWeight='600' color='#00B287'>{item.title}</Text>
