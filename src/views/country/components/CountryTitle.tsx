@@ -2,7 +2,6 @@ import {
   VStack,
   Select,
   Box,
-  Image,
   Text,
   Button,
 } from '@chakra-ui/react';
@@ -10,6 +9,8 @@ import { useRouter } from 'next/router';
 import React, { use, useEffect, useState } from 'react';
 import { Country, countryData } from '../const';
 import { useFormStore } from '@/store/formStore';
+
+import Image from 'next/image';
 
 function Overview() {
   const [current, setCurrent] = useState<Country>(countryData[0]);
@@ -39,7 +40,11 @@ function Overview() {
       >
         <VStack alignItems='unset'>
           <Box display='flex' alignItems='center' marginBottom='64px'>
-            <Image src={current.flag} width='60px' height='50px' marginRight='10px' alt='coutry flag' />
+            <Image src={current.flag} width={60} height={50} 
+              style={{
+                marginRight: '10px'
+              }}
+             alt='coutry flag' />
             <Select
               variant='unstyled'
               width='200px'
@@ -71,7 +76,9 @@ function Overview() {
         top='0'
         zIndex='1'
       >
-        <Image src='/country/shadow.png' objectFit='fill' objectPosition='center center' width='100%' height='100%' alt='shadow' />
+        <Image src='/country/shadow.png' style={{
+          objectPosition: 'center center'
+        }} fill alt='shadow' />
       </Box>
       <Box
         height='100%'
@@ -80,7 +87,12 @@ function Overview() {
         right='0'
         top='0'
       >
-        <Image src={current.bgImage} objectFit='fill' objectPosition='center center' width='100%' height='100%' alt='background' />
+        {
+          current.bgImage && <Image src={current.bgImage} style={{
+            objectPosition: 'center center'
+          }} fill alt='background' />
+        }
+     
       </Box>
       
     </Box>

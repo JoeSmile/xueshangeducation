@@ -104,7 +104,7 @@ function AbroadMode() {
                         fontWeight='600'
                         marginRight='20px'
                       >
-                        {`国内${item.inner}年+国外${item.outer}年`}
+                        {`${item.inner}+${item.outer}`}
                       </Box>
                       <Box
                         as='span'

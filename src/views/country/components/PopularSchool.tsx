@@ -1,7 +1,8 @@
-import { Card, Flex, VStack, Wrap, WrapItem, Text, Image, Box, HStack, Divider } from '@chakra-ui/react';
+import { Card, Flex, VStack, Wrap, WrapItem, Text, Box, HStack, Divider } from '@chakra-ui/react';
 import React from 'react';
 import { School } from './data';
 import { useFormStore } from '@/store/formStore';
+import Image from 'next/image';
 
 const offerList = [{
   logoUrl: '/contry_school/pu.gif',
@@ -79,7 +80,11 @@ function PopularSchool({ schools = offerList }: PopularSchoolProps) {
                   <HStack
                     
                   >
-                    <Image src={item.logoUrl} objectFit='cover' height='56px' alt='icon'/>
+                    <Image src={item.logoUrl}    
+                      style={{
+                        objectFit: 'cover', // cover, contain, none
+                      }} height={56} alt='icon'
+                    />
                     <Box fontSize='12px'>
                       <Text fontSize='20px' color='#089b7d'>{item.name}</Text>
                       <Text fontSize='12px' color='#999999' noOfLines={1}>{item.englishName}</Text>

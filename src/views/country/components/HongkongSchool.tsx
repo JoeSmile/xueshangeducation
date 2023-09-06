@@ -1,5 +1,6 @@
-import { Card, Flex, VStack, Wrap, WrapItem, Text, Image, Box, HStack, Divider } from '@chakra-ui/react';
+import { Card, Flex, VStack, Wrap, WrapItem, Text, Box, HStack, Divider } from '@chakra-ui/react';
 import React, { useState } from 'react';
+import Image from 'next/image';
 
 const offerList = [{
   logoUrl: '/hongkong/1.png',
@@ -83,7 +84,11 @@ function HongkongSchool() {
                 onClick={() => { onClickSchool(item) }}
               >
                 <HStack>
-                  <Image src={item.logoUrl} objectFit='cover' height='68px' alt='icon'/>
+                  <Image src={item.logoUrl}    
+                    style={{
+                      objectFit: 'cover', // cover, contain, none
+                    }} height={68} alt='icon'
+                  />
                   <Box fontSize='12px'>
                     <Text fontSize='18px' color='#666666' fontWeight='bold'>{item.name}</Text>
                     <Text fontSize='12px' color='#666666' marginBottom='10px'>{item.englishName}</Text>

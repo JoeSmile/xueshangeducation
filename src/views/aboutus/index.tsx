@@ -1,9 +1,11 @@
 import Layout from '@/components/layout';
-import { Box, Center, Image, Text, VStack } from '@chakra-ui/react';
+import { Box, Center, Text, VStack } from '@chakra-ui/react';
 import React from 'react';
 import { Gallery } from 'react-grid-gallery';
 import images from './image';
 import Seo from '@/components/SEO';
+
+import Image from 'next/image';
 
 export const Aboutus =()=> {
   return (
@@ -11,8 +13,14 @@ export const Aboutus =()=> {
       <Seo/>
       <VStack flex={1} background='white'>
         <Box display='block' textIndent='20px' maxW='800px' m='20px auto' flex={1} background='white'>
-          <Image src='/logo.png' objectFit='contain' alt='aboutus' 
-            display='inline-block' height='300px' width='300px' mr='20px' />
+          <Image src='/logo.png' 
+            style={{
+              objectFit: 'contain', // cover, contain, none
+              display: 'inline-block',
+              marginRight: '20px'
+            }}
+            alt='aboutus' 
+            height={300} width={300} />
         </Box>
         <Text maxW='800px' textIndent='2rem'>
         北京学尚太奇信息科技有限公司成立于2017年，是恒坤集团旗下从事出国留学服务的专职机构，业务范围涵盖广泛，从低龄留学到海外博士申请，包括留学规划、背景提升、科研竞赛、院校申请、奖学金申请、文书指导、签证服务、职业规划等方面。已与美国、英国、澳大利亚、加拿大、爱尔兰、新西兰、日本、韩国、中国香港、中国澳门、新加坡、马来西亚、德国、法国、瑞士、瑞典等几十个国家和地区的众多海内外教育机构建立了良好的合作关系。

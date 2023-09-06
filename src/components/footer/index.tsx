@@ -1,4 +1,5 @@
-import { Divider, VStack, StackProps, HStack, Text, Image, CardBody, Stack, Card, Box} from '@chakra-ui/react';
+import { Divider, VStack, StackProps, HStack, Text, CardBody, Stack, Card, Box} from '@chakra-ui/react';
+import Image from 'next/image';
 
 const QRcodes = ['qrcode.jpg', 'little-program.jpg']
 
@@ -6,7 +7,7 @@ const QRCodeCard = () => {
   return  <Card boxShadow='none'>
   <CardBody bg='#0D0E67'>
     <VStack>
-      <Image src='/qrcode.jpg' alt='qrcode' height='80px' width='80px'/>
+      <Image src='/qrcode.jpg' alt='qrcode' height={80} width={80}/>
       <Text color='gray.50'>公众号: 学man君</Text>
     </VStack>
   </CardBody>

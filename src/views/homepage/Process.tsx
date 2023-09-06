@@ -8,7 +8,6 @@ import {
   Card,
   Text,
   Center,
-  Image,
   Divider,
   HStack,
 } from '@chakra-ui/react'
@@ -23,6 +22,7 @@ export type ProcessItemsProps = {
   ProcessItems?: ProcessItem[],
   title?: string
 }
+import Image from 'next/image';
 
 const ProcessIcons = [
   '/homepage/process/fuIcon_1.jpg',
@@ -105,7 +105,9 @@ function Process({ProcessItems = DefaultProcessItem, title}: ProcessItemsProps) 
               <WrapItem key={item.title}>
                 <HStack>
                   <VStack borderRadius='150px' alignItems='center' bg='#fff' paddingX='20px' paddingY='50px'>
-                    <Image src={ProcessIcons[processIndex]} objectFit='cover' height='56px' alt='icon'/>
+                    <Image src={ProcessIcons[processIndex]}   style={{
+                        objectFit: 'cover', // cover, contain, none
+                      }} height={56} width={56} alt='icon'/>
                     <Text fontSize='24px' fontWeight='600' color='#00B287'>{item.title}</Text>
                     <Divider />
                     <VStack>
@@ -114,7 +116,9 @@ function Process({ProcessItems = DefaultProcessItem, title}: ProcessItemsProps) 
                       ))}
                     </VStack>
                   </VStack>
-                  {processIndex !== ProcessItems.length - 1 && <Image src="/homepage/process/fuLine.png" objectFit='cover' height='30px' alt='icon'/>}
+                  {processIndex !== ProcessItems.length - 1 && <Image src="/homepage/process/fuLine.png" style={{
+                      objectFit: 'cover', // cover, contain, none
+                    }} height={30} width={30} alt='icon'/>}
                 </HStack>
               </WrapItem>
               )

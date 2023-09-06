@@ -4,12 +4,13 @@ import ModuleWrapper from '@/components/moduleWrapper';
 import React from 'react';
 import Countries from './Countries';
 import Process, { ProcessItem } from './Process';
-import Profession from './Profession';
-import OfferExample from './OfferExample';
-import Rank from './Rank';
-import Consult from './Consult'
 import { HomePageProcessItem} from './data';
 import Seo from '@/components/SEO';
+import dynamic from 'next/dynamic'
+
+const Profession = dynamic(() => import('./Profession'))
+const OfferExample = dynamic(() => import('./OfferExample'))
+const Rank = dynamic(() => import('./Rank'))
 
 const images = [{
   src: '/homepage/swiper/1.jpg'

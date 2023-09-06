@@ -1,7 +1,9 @@
-import { Flex, Image } from '@chakra-ui/react';
+import { Flex } from '@chakra-ui/react';
 import React from 'react';
 import {SwiperSlide} from 'swiper/react';
 import { useFormStore } from '@/store/formStore';
+
+import Image from 'next/image';
 
 import { Navigation, Pagination, Autoplay } from 'swiper';
 import Swiper from '../swiper';
@@ -48,8 +50,11 @@ function ImageSwiper(props:ImageSwiperProps) {
                 cursor='pointer'
                 justifyContent='center' onClick={() => onOpen()}>
                 <Image src={image.src} alt={image.src}  
-                  width='100%' height='100%' 
-                  objectFit='cover'/>
+                  fill
+                  style={{
+                    objectFit: 'cover', // cover, contain, none
+                  }}
+                />
               </Flex>
           </SwiperSlide>
           )

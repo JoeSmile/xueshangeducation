@@ -8,11 +8,10 @@ import {
   Card,
   Text,
   Center,
-  Image,
   Divider,
   HStack,
 } from '@chakra-ui/react'
-
+import Image from 'next/image';
 type ReasonIconsType = {
   bgImage: string,
   icon: string,
@@ -93,7 +92,9 @@ function Reasons({ReasonItems = DefaultReasonItems, title='为什么赴美留学
                   backgroundPosition='center'
                   backgroundRepeat='no-repeat'
                 >
-                  <Image src={ReasonIcons[index].icon} objectFit='cover' alt='icon'/>
+                  <Image src={ReasonIcons[index].icon}     style={{
+                      objectFit: 'cover', // cover, contain, none
+                    }} alt='icon'/>
                   <Text fontSize='16px' fontWeight='600' marginY='0'>{item.reason}</Text>
                   <Divider variant='dashed' marginY='10px' opacity='1' borderColor={ReasonIcons[index].dividerColor} />
                   <Text width='200px' minH='90px' fontSize='14px'
