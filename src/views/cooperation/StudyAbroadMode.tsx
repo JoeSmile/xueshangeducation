@@ -10,6 +10,7 @@ import {
   Divider,
 } from '@chakra-ui/react';
 
+import { useFormStore } from '@/store/formStore';
 
 const modeList = [{
   type: '4+0',
@@ -46,6 +47,8 @@ const modeList = [{
 }]
 
 function AbroadMode() {
+  const onOpen = useFormStore(s => s.onOpen);
+
   return (
     <VStack padding='20px'>
       <Box
@@ -104,13 +107,13 @@ function AbroadMode() {
                         fontWeight='600'
                         marginRight='20px'
                       >
-                        {`${item.inner}+${item.outer}`}
+                        {item.inner}
                       </Box>
                       <Box
                         as='span'
                         color='#0D0E67'
                       >
-                        获得国外学士学位
+                       {item.outer}
                       </Box>
                     </Box>
                     <Divider bg='#0D0E67' variant='dashed' />
@@ -129,7 +132,7 @@ function AbroadMode() {
           )
         }
       </Wrap>
-      <Box as='button' bg='#FF8A00' borderRadius='50px' color='#fff' px='4px' h='8' w='200px'>留学费用详解</Box>
+      <Box as='button' bg='#FF8A00' borderRadius='50px' color='#fff' px='4px' h='8' w='200px'  onClick={() => onOpen()}>留学费用详解</Box>
     </VStack>
   )
 }
