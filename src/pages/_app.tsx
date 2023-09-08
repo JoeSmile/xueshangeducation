@@ -24,6 +24,8 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <title>学尚教育</title>
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="any" href="/img/favicon.png"/>
       </Head>
       <ChakraProvider theme={theme}>
         <FormModal />
