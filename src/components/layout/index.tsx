@@ -17,6 +17,7 @@ const Layout = (props: LayoutProps)=> {
       minH='100%' {...restProps} 
       spacing='0'
       minHeight='100vh'
+      minW='1200px'
     >
       <Header />
       <Box width='100%' margin='0 auto' flex='1' height='100%'>

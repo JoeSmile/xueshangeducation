@@ -7,16 +7,19 @@ function FormModal() {
   const onClose = useFormStore(s => s.onClose);
 
   return (
-    <Modal isOpen={isOpen} onClose={onClose} size='lg'>
+    <Modal isOpen={isOpen} onClose={onClose}>
       <ModalOverlay />
-
-      <ModalContent width='100%' maxW='860px'>
-        <ModalCloseButton />
-        <ModalBody height='1000px' width='1000px'>
-          <Box height='1000px' width='800px'>
-            <iframe src="https://jinshuju.net/f/mhaBCE" height='100%' width='100%'></iframe>
-          </Box>
-        </ModalBody>
+      <ModalContent overflow='auto' width='860px' padding={0} paddingTop='20px'>
+        {/* <Box position='absolute' color='black' top='15px' right='15px' onClick={() => {
+          console.log('11111');
+          onClose();
+        }}> X </Box> */}
+      <ModalCloseButton  />
+      <ModalBody height='600px' p={0}>
+        <Box height='600px' zIndex='100'>
+          <iframe src="https://jinshuju.net/f/mhaBCE" height='100%' width='100%'></iframe>
+        </Box>
+      </ModalBody>
       </ModalContent>
     </Modal>
   );
