@@ -10,16 +10,12 @@ function FormModal() {
     <Modal isOpen={isOpen} onClose={onClose}>
       <ModalOverlay />
       <ModalContent overflow='auto' width='860px' padding={0} paddingTop='20px'>
-        {/* <Box position='absolute' color='black' top='15px' right='15px' onClick={() => {
-          console.log('11111');
-          onClose();
-        }}> X </Box> */}
-      <ModalCloseButton  />
-      <ModalBody height='600px' p={0}>
-        <Box height='600px' zIndex='100'>
-          <iframe src="https://jinshuju.net/f/mhaBCE" height='100%' width='100%'></iframe>
-        </Box>
-      </ModalBody>
+        <ModalCloseButton  />
+        <ModalBody height='600px' p={0}>
+          <Box height='600px' zIndex='100'>
+            <iframe src="https://jinshuju.net/f/mhaBCE" height='100%' width='100%'></iframe>
+          </Box>
+        </ModalBody>
       </ModalContent>
     </Modal>
   );
