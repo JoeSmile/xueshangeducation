@@ -39,5 +39,6 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 
 service nginx restart
+/bin/systemctl restart nginx.service
 pm2 stop all
 yarn run startup

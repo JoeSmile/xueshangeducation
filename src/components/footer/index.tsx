@@ -38,7 +38,8 @@ function Footer(props: StackProps) {
       <Addresses />
       <QRCodeCard />
     </HStack>
-    <Text>Copyright © 2023 北京学尚太奇信息科技有限公司 | 京ICP备2022008077号</Text>
+    <Text>Copyright © 2023 北京学尚太奇信息科技有限公司</Text>
+    <Text><a href="https://beian.miit.gov.cn/" target="_blank">京ICP备2022008077号-3</a ></Text>
    </VStack>
   );
 }
